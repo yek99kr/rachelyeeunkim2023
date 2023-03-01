@@ -1,0 +1,235 @@
+{
+  "uid": {
+    "__TYPE__": "UIDContent",
+    "value": "short"
+  },
+  "title": {
+    "__TYPE__": "FieldContent",
+    "value": "began",
+    "type": "Text"
+  },
+  "year": {
+    "__TYPE__": "FieldContent",
+    "value": "child",
+    "type": "Text"
+  },
+  "mini_thumbnail": {
+    "__TYPE__": "ImageContent",
+    "origin": {
+      "id": "main",
+      "url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea",
+      "width": 3500,
+      "height": 2338
+    },
+    "url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea",
+    "width": 3500,
+    "height": 2338,
+    "edit": {
+      "zoom": 1,
+      "crop": {
+        "x": 0,
+        "y": 0
+      },
+      "background": "transparent"
+    },
+    "thumbnails": {}
+  },
+  "thumbnail": {
+    "__TYPE__": "LinkContent",
+    "value": {
+      "__TYPE__": "ExternalLink",
+      "url": "http://twitter.com"
+    }
+  },
+  "thumbnail_hover": {
+    "__TYPE__": "LinkContent",
+    "value": {
+      "__TYPE__": "ExternalLink",
+      "url": "https://prismic.io"
+    }
+  },
+  "summary": {
+    "__TYPE__": "StructuredTextContent",
+    "value": [
+      {
+        "type": "paragraph",
+        "content": {
+          "text": "Aute eu et ullamco aliquip aliquip nostrud excepteur. Aute voluptate incididunt nulla consectetur duis nulla enim aute aute aliqua eu."
+        }
+      }
+    ]
+  },
+  "slices": {
+    "__TYPE__": "SliceContentType",
+    "value": [
+      {
+        "key": "credits$79b2fd46-37a0-4677-9e51-1b1a5905a6cf",
+        "name": "credits",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {},
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": [
+                [
+                  "title",
+                  {
+                    "__TYPE__": "FieldContent",
+                    "value": "horn",
+                    "type": "Text"
+                  }
+                ],
+                [
+                  "name",
+                  {
+                    "__TYPE__": "FieldContent",
+                    "value": "neighbor",
+                    "type": "Text"
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "key": "detail_text$8e375341-55fd-445e-b28d-83e55016e53f",
+        "name": "detail_text",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "text": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Duis ipsum mollit aliqua culpa. Culpa elit sit fugiat reprehenderit ea quis culpa in et. In consectetur laboris aliquip pariatur esse veniam consequat irure aute officia dolore."
+                  }
+                }
+              ]
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
+      },
+      {
+        "key": "work_detail_media16_x9$1feb4cd6-859c-49d1-b402-a942329e4687",
+        "name": "work_detail_media16_x9",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "media": {
+              "__TYPE__": "LinkContent",
+              "value": {
+                "__TYPE__": "ExternalLink",
+                "url": "https://slicemachine.dev"
+              }
+            },
+            "autoplay": {
+              "__TYPE__": "BooleanContent",
+              "value": false
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
+      },
+      {
+        "key": "work_detail_media1_x1$de4c6bbe-9c99-4eb3-b1c9-4ae4c93f62a0",
+        "name": "work_detail_media1_x1",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "media": {
+              "__TYPE__": "LinkContent",
+              "value": {
+                "__TYPE__": "ExternalLink",
+                "url": "https://prismic.io"
+              }
+            },
+            "autoplay": {
+              "__TYPE__": "BooleanContent",
+              "value": false
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
+      },
+      {
+        "key": "work_detail_media9_x16$bdd9a7f0-17fd-4880-a1e3-ee23c92d953e",
+        "name": "work_detail_media9_x16",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "media": {
+              "__TYPE__": "LinkContent",
+              "value": {
+                "__TYPE__": "ExternalLink",
+                "url": "http://twitter.com"
+              }
+            },
+            "autoplay": {
+              "__TYPE__": "BooleanContent",
+              "value": false
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
+      },
+      {
+        "key": "link_button$373bb981-e491-4fc8-802b-b88675806619",
+        "name": "link_button",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "name": {
+              "__TYPE__": "FieldContent",
+              "value": "largest",
+              "type": "Text"
+            },
+            "link": {
+              "__TYPE__": "LinkContent",
+              "value": {
+                "__TYPE__": "ExternalLink",
+                "url": "https://slicemachine.dev"
+              }
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

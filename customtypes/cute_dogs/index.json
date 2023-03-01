@@ -1,0 +1,34 @@
+{
+  "id": "cute_dogs",
+  "label": "cute dogs",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "dogs": {
+        "type": "Group",
+        "config": {
+          "label": "Dogs",
+          "fields": {
+            "dog": {
+              "type": "Link",
+              "config": {
+                "label": "Dog",
+                "placeholder": "",
+                "select": null
+              }
+            },
+            "link": {
+              "type": "Link",
+              "config": {
+                "label": "Link",
+                "placeholder": "",
+                "select": null
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "id": "work_detail_media1_x1",
+  "type": "SharedSlice",
+  "name": "WorkDetailMedia1X1",
+  "description": "WorkDetailMedia1X1",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "WorkDetailMedia1X1",
+      "primary": {
+        "media": {
+          "type": "Link",
+          "config": {
+            "label": "Media",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "autoplay": {
+          "type": "Boolean",
+          "config": {
+            "label": "Autoplay",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    },
+    {
+      "id": "2Row",
+      "name": "2 row",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "WorkDetailMedia1X1",
+      "primary": {
+        "media1": {
+          "type": "Link",
+          "config": {
+            "label": "Media1",
+            "placeholder": "",
+            "allowTargetBlank": false,
+            "select": null
+          }
+        },
+        "media1slider": {
+          "type": "Boolean",
+          "config": {
+            "label": "Media1Slider",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        },
+        "media1Autoplay": {
+          "type": "Boolean",
+          "config": {
+            "label": "Media1Autoplay",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": true
+          }
+        },
+        "media2": {
+          "type": "Link",
+          "config": {
+            "label": "Media2",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "media2slider": {
+          "type": "Boolean",
+          "config": {
+            "label": "Media2Slider",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        },
+        "media2Autoplay": {
+          "type": "Boolean",
+          "config": {
+            "label": "Media2Autoplay",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": true
+          }
+        }
+      },
+      "items": {
+        "media1": {
+          "type": "Link",
+          "config": {
+            "label": "Media1",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "media2": {
+          "type": "Link",
+          "config": {
+            "label": "Media2",
+            "placeholder": "",
+            "select": null
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    },
+    {
+      "id": "slider",
+      "name": "Slider",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "WorkDetailMedia1X1",
+      "primary": {},
+      "items": {
+        "media": {
+          "type": "Link",
+          "config": {
+            "label": "Media",
+            "placeholder": "",
+            "select": null
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    },
+    {
+      "id": "full",
+      "name": "Full",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "WorkDetailMedia1X1",
+      "primary": {
+        "media": {
+          "type": "Link",
+          "config": {
+            "label": "Media",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "autoplay": {
+          "type": "Boolean",
+          "config": {
+            "label": "Autoplay",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    },
+    {
+      "id": "3Rows",
+      "name": "3 Rows",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "WorkDetailMedia1X1",
+      "primary": {
+        "media1": {
+          "type": "Link",
+          "config": {
+            "label": "Media1",
+            "placeholder": "",
+            "allowTargetBlank": false,
+            "select": null
+          }
+        },
+        "media1Autoplay": {
+          "type": "Boolean",
+          "config": {
+            "label": "Media1Autoplay",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
+        },
+        "media2": {
+          "type": "Link",
+          "config": {
+            "label": "Media2",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "media2Autoplay": {
+          "type": "Boolean",
+          "config": {
+            "label": "Media2Autoplay",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        },
+        "media3": {
+          "type": "Link",
+          "config": {
+            "label": "Media3",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "media3Autoplay": {
+          "type": "Boolean",
+          "config": {
+            "label": "Media3Autoplay",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

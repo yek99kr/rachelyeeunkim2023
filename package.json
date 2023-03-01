@@ -1,0 +1,37 @@
+{
+  "name": "2023portfolioo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "slicemachine": "start-slicemachine"
+  },
+  "dependencies": {
+    "@next/font": "^13.1.6",
+    "@prismicio/client": "^6.7.3",
+    "@prismicio/helpers": "^2.3.8",
+    "@prismicio/next": "^1.0.2",
+    "@prismicio/react": "^2.5.1",
+    "@prismicio/slice-simulator-react": "^0.2.3",
+    "eslint": "8.27.0",
+    "eslint-config-next": "13.0.2",
+    "framer-motion": "^9.0.2",
+    "keen-slider": "^6.8.5",
+    "next": "13.0.2",
+    "plaiceholder": "^2.5.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.7.1",
+    "sharp": "^0.31.3"
+  },
+  "devDependencies": {
+    "@prismicio/types": "^0.2.7",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
+    "slice-machine-ui": "^0.6.1",
+    "tailwindcss": "^3.2.4"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "_cts": {
+    "works": {},
+    "cute_dogs": {}
+  },
+  "slices": {
+    "WorkDetailMedia16X9": {
+      "default": {
+        "primary": {}
+      },
+      "slider": {
+        "primary": {}
+      }
+    },
+    "DetialText": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "WorkDetailMedia1X1": {
+      "default": {
+        "primary": {}
+      },
+      "2Row": {
+        "primary": {}
+      },
+      "slider": {
+        "primary": {},
+        "items": {}
+      },
+      "3Rows": {
+        "primary": {}
+      }
+    },
+    "Credits": {
+      "default": {
+        "primary": {},
+        "items": {}
+      }
+    },
+    "DetailText": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "WorkDetailMedia9X16": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "LinkButton": {
+      "default": {
+        "primary": {}
+      }
+    }
+  }
+}
