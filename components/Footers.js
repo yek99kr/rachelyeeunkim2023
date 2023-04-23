@@ -87,36 +87,48 @@ const Footers = () => {
         </div>
         <div className={`inline cursor-pointer`}>Searchwords:</div>
         <div className="inline pl-[1vw] md:pl-[0.2vw] ">
-          <p className="inline marquee marquee1 marq2  overflow-hidden">
+          <p className="inline marquee marquee1 marq2  overflow-hidden ">
             <span>
-              &nbsp;works &nbsp;&#x2734;&nbsp; about &nbsp;&#x2734;&nbsp; cute
-              dogs &nbsp;&#x2734;&nbsp; how to &nbsp;&#x2734;&nbsp; shop
-              &nbsp;&#x2734;&nbsp;works &nbsp;&#x2734;&nbsp; about
-              &nbsp;&#x2734;&nbsp; cute dogs &nbsp;&#x2734;&nbsp; how to
-              &nbsp;&#x2734;&nbsp; shop &nbsp;&#x2734;&nbsp;works
-              &nbsp;&#x2734;&nbsp; about &nbsp;&#x2734;&nbsp; cute dogs
-              &nbsp;&#x2734;&nbsp; how to &nbsp;&#x2734;&nbsp; shop
-              &nbsp;&#x2734;&nbsp;works &nbsp;&#x2734;&nbsp; about
-              &nbsp;&#x2734;&nbsp; cute dogs &nbsp;&#x2734;&nbsp; how to
-              &nbsp;&#x2734;&nbsp; shop &nbsp;&#x2734;&nbsp;works
-              &nbsp;&#x2734;&nbsp; about &nbsp;&#x2734;&nbsp; cute dogs
-              &nbsp;&#x2734;&nbsp; how to &nbsp;&#x2734;&nbsp; shop
+              &nbsp; works &nbsp;&#x2734;&#xFE0E;&nbsp; about
+              &nbsp;&#x2734;&#xFE0E;&nbsp; cute dogs
+              &nbsp;&#x2734;&#xFE0E;&nbsp; how to &nbsp;&#x2734;&#xFE0E;&nbsp;
+              shop &nbsp;&#x2734;&#xFE0E;&nbsp; works
+              &nbsp;&#x2734;&#xFE0E;&nbsp; about &nbsp;&#x2734;&#xFE0E;&nbsp;
+              cute dogs &nbsp;&#x2734;&#xFE0E;&nbsp; how to
+              &nbsp;&#x2734;&#xFE0E;&nbsp; shop
+              &nbsp;&#x2734;&#xFE0E;&nbsp;works &nbsp;&#x2734;&#xFE0E;&nbsp;
+              about &nbsp;&#x2734;&#xFE0E;&nbsp; cute dogs
+              &nbsp;&#x2734;&#xFE0E;&nbsp; how to &nbsp;&#x2734;&#xFE0E;&nbsp;
+              shop &nbsp;&#x2734;&#xFE0E;&nbsp; works
+              &nbsp;&#x2734;&#xFE0E;&nbsp; about &nbsp;&#x2734;&#xFE0E;&nbsp;
+              cute dogs &nbsp;&#x2734;&#xFE0E;&nbsp; how to
+              &nbsp;&#x2734;&#xFE0E;&nbsp; shop &nbsp;&#x2734;&#xFE0E;&nbsp;
+              works &nbsp;&#x2734;&#xFE0E;&nbsp; about
+              &nbsp;&#x2734;&#xFE0E;&nbsp; cute dogs
+              &nbsp;&#x2734;&#xFE0E;&nbsp; how to &nbsp;&#x2734;&#xFE0E;&nbsp;
+              shop &nbsp;&#x2734;&#xFE0E;&nbsp;
             </span>
           </p>
           <p className="inline marquee marquee2 marq2 overflow-hidden">
             <span>
-              &nbsp;works &nbsp;&#x2734;&nbsp; about &nbsp;&#x2734;&nbsp; cute
-              dogs &nbsp;&#x2734;&nbsp; how to &nbsp;&#x2734;&nbsp; shop
-              &nbsp;&#x2734;&nbsp;works &nbsp;&#x2734;&nbsp; about
-              &nbsp;&#x2734;&nbsp; cute dogs &nbsp;&#x2734;&nbsp; how to
-              &nbsp;&#x2734;&nbsp; shop &nbsp;&#x2734;&nbsp;works
-              &nbsp;&#x2734;&nbsp; about &nbsp;&#x2734;&nbsp; cute dogs
-              &nbsp;&#x2734;&nbsp; how to &nbsp;&#x2734;&nbsp; shop
-              &nbsp;&#x2734;&nbsp;works &nbsp;&#x2734;&nbsp; about
-              &nbsp;&#x2734;&nbsp; cute dogs &nbsp;&#x2734;&nbsp; how to
-              &nbsp;&#x2734;&nbsp; shop &nbsp;&#x2734;&nbsp;works
-              &nbsp;&#x2734;&nbsp; about &nbsp;&#x2734;&nbsp; cute dogs
-              &nbsp;&#x2734;&nbsp; how to &nbsp;&#x2734;&nbsp; shop
+              &nbsp; works &nbsp;&#x2734;&#xFE0E;&nbsp; about
+              &nbsp;&#x2734;&#xFE0E;&nbsp; cute dogs
+              &nbsp;&#x2734;&#xFE0E;&nbsp; how to &nbsp;&#x2734;&#xFE0E;&nbsp;
+              shop &nbsp;&#x2734;&#xFE0E;&nbsp; works
+              &nbsp;&#x2734;&#xFE0E;&nbsp; about &nbsp;&#x2734;&#xFE0E;&nbsp;
+              cute dogs &nbsp;&#x2734;&#xFE0E;&nbsp; how to
+              &nbsp;&#x2734;&#xFE0E;&nbsp; shop
+              &nbsp;&#x2734;&#xFE0E;&nbsp;works &nbsp;&#x2734;&#xFE0E;&nbsp;
+              about &nbsp;&#x2734;&#xFE0E;&nbsp; cute dogs
+              &nbsp;&#x2734;&#xFE0E;&nbsp; how to &nbsp;&#x2734;&#xFE0E;&nbsp;
+              shop &nbsp;&#x2734;&#xFE0E;&nbsp; works
+              &nbsp;&#x2734;&#xFE0E;&nbsp; about &nbsp;&#x2734;&#xFE0E;&nbsp;
+              cute dogs &nbsp;&#x2734;&#xFE0E;&nbsp; how to
+              &nbsp;&#x2734;&#xFE0E;&nbsp; shop &nbsp;&#x2734;&#xFE0E;&nbsp;
+              works &nbsp;&#x2734;&#xFE0E;&nbsp; about
+              &nbsp;&#x2734;&#xFE0E;&nbsp; cute dogs
+              &nbsp;&#x2734;&#xFE0E;&nbsp; how to &nbsp;&#x2734;&#xFE0E;&nbsp;
+              shop &nbsp;&#x2734;&#xFE0E;&nbsp;
             </span>
           </p>
         </div>

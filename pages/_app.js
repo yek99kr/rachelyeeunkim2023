@@ -10,14 +10,8 @@ import { useState, useEffect } from "react";
 import { AppContextProvider } from "../context/AppContext";
 import SearchBar from "../components/SearchBar";
 import Router from "next/router";
-import { Inter } from "@next/font/google";
 
 import Head from "next/head";
-
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
 
 export default function App({ router, Component, pageProps }) {
   const [loading, setLoading] = useState(false);
@@ -62,7 +56,7 @@ export default function App({ router, Component, pageProps }) {
       >
         <PrismicPreview repositoryName={repositoryName}>
           <AppContextProvider>
-            <main className={inter.className}>
+            <main>
               <div
                 className={`transition-[0.5s] ${
                   router.pathname !== "/"

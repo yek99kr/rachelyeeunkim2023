@@ -8,15 +8,6 @@ const Title = () => {
   // console.log(title);
   return (
     <>
-      {/* <div className="absolute w-[90vw] sm:w-[30vw] h-[30vw] sm:h-[8.5vw]  self-center  left-1/2 top-1/2 -translate-x-1/2 translate-y-[-120%]">
-        <Image
-          priority={true}
-          loading="eager"
-          layout="fill"
-          objectFit="cover"
-          src="/googleRachel.png"
-        ></Image>
-      </div> */}
       <div
         className="select-none"
         onClick={() => {
@@ -28,85 +19,85 @@ const Title = () => {
         }}
       >
         <img
-          className={`blur-[15px] transition-[0.4s] ${
+          className={`title ${
             title === 1 ? "block" : "hidden"
-          } absolute active:scale-90 cursor-pointer w-[60vw] md:w-[400px] self-center left-1/2 top-1/2 -translate-x-1/2 translate-y-[-210%] md:translate-y-[-170%]`}
+          } absolute active:scale-90 cursor-pointer w-[75vw] md:w-[500px] self-center left-1/2 top-1/2 -translate-x-1/2 translate-y-[-135%] md:translate-y-[-120%]`}
           src="/googleRachel.png"
         ></img>
 
         <img
-          className={`${
+          className={`title ${
             title === 2 ? "block" : "hidden"
-          } absolute active:scale-90 transition-[0.2s] cursor-pointer w-[60vw] md:w-[460px] self-center left-1/2 top-1/2 -translate-x-[52.5%] translate-y-[-137%] md:translate-y-[-113%]`}
+          } absolute active:scale-90 transition-[0.2s] cursor-pointer w-[60vw] md:w-[460px] self-center left-1/2 top-1/2 -translate-x-[52.5%] translate-y-[-130%] md:translate-y-[-113%]`}
           src="/hollywoodRachel.png"
         ></img>
         <img
-          className={`${
+          className={`title ${
             title === 3 ? "block" : "hidden"
-          } absolute active:scale-90 transition-[0.2s] cursor-pointer w-[80vw] md:w-[580px] self-center left-1/2 top-1/2 -translate-x-1/2 translate-y-[-145%] md:translate-y-[-115%]`}
+          } absolute active:scale-90 transition-[0.2s] cursor-pointer w-[80vw] md:w-[580px] self-center left-1/2 top-1/2 -translate-x-1/2 translate-y-[-130%] md:translate-y-[-115%]`}
           src="/clayRachel.png"
         ></img>
 
         <img
-          className={`${
+          className={`title ${
             title === 4 ? "block" : "hidden"
-          } absolute active:scale-90 transition-[0.2s] cursor-pointer w-[55vw] md:w-[350px] self-center left-1/2 top-1/2 -translate-x-[49%] translate-y-[-230%] md:translate-y-[-195%]`}
+          } absolute active:scale-90 transition-[0.2s] cursor-pointer w-[55vw] md:w-[350px] self-center left-1/2 top-1/2 -translate-x-[49%] translate-y-[-220%] md:translate-y-[-195%]`}
           src="/emojiRachel.png"
         ></img>
 
         <img
-          className={`${
+          className={`title ${
             title === 5 ? "block" : "hidden"
-          } absolute active:scale-90 transition-[0.2s] cursor-pointer w-[60vw] md:w-[420px] self-center left-1/2 top-1/2 -translate-x-[50%] rotate-[-0deg] translate-y-[-190%] md:translate-y-[-155%]`}
+          } absolute active:scale-90 transition-[0.2s] cursor-pointer w-[60vw] md:w-[420px] self-center left-1/2 top-1/2 -translate-x-[50%] rotate-[-0deg] translate-y-[-180%] md:translate-y-[-155%]`}
           src="/markerRachel.gif"
         ></img>
 
         <img
-          className={`transition-[0.4s] ${
+          className={`transition-[0.4s] title ${
             title === 6 ? "block" : "hidden"
-          } absolute active:scale-90 cursor-pointer w-[80vw] md:w-[580px] self-center left-1/2 top-1/2 -translate-x-1/2 translate-y-[-150%] md:translate-y-[-125%]`}
+          } absolute active:scale-90 cursor-pointer w-[80vw] md:w-[580px] self-center left-1/2 top-1/2 -translate-x-1/2 translate-y-[-140%] md:translate-y-[-125%]`}
           src="/spongeRachel.png"
         ></img>
 
         <img
-          className={`${
+          className={`title ${
             title === 7 ? "block" : "hidden"
-          } absolute active:scale-90 transition-[0.2s] cursor-pointer w-[60vw] md:w-[420px] self-center left-1/2 top-1/2 -translate-x-[50%] rotate-[-0deg] translate-y-[-155%] md:translate-y-[-130%]`}
+          } absolute active:scale-90 transition-[0.2s] cursor-pointer w-[60vw] md:w-[420px] self-center left-1/2 top-1/2 -translate-x-[50%] rotate-[-0deg] translate-y-[-145%] md:translate-y-[-130%]`}
           src="/milkRachel.png"
         ></img>
 
         <img
-          className={`${
+          className={`title ${
             title === 8 ? "block" : "hidden"
-          } absolute active:scale-90 transition-[0.2s] cursor-pointer w-[80vw] md:w-[580px] self-center left-1/2 top-1/2 -translate-x-[45%] rotate-[-0deg] translate-y-[-145%] md:translate-y-[-125%]`}
+          } absolute active:scale-90 transition-[0.2s] cursor-pointer w-[80vw] md:w-[580px] self-center left-1/2 top-1/2 -translate-x-[45%] rotate-[-0deg] translate-y-[-135%] md:translate-y-[-125%]`}
           src="/cloudRachel.png"
         ></img>
 
         <img
-          className={`${
+          className={`title ${
             title === 9 ? "block" : "hidden"
-          } absolute active:scale-90 transition-[0.2s] cursor-pointer w-[55vw] md:w-[400px] self-center left-1/2 top-1/2 -translate-x-[50%] rotate-[-0deg] translate-y-[-135%] md:translate-y-[-117%]`}
+          } absolute active:scale-90 transition-[0.2s] cursor-pointer w-[55vw] md:w-[400px] self-center left-1/2 top-1/2 -translate-x-[50%] rotate-[-0deg] translate-y-[-130%] md:translate-y-[-117%]`}
           src="/comicRachel.png"
         ></img>
 
         <img
-          className={`${
+          className={`title ${
             title === 10 ? "block" : "hidden"
-          } absolute active:scale-90 transition-[0.2s] cursor-pointer w-[88vw] sm:w-[600px] md:w-[700px] self-center left-1/2 top-1/2 -translate-x-1/2 translate-y-[-155%] sm:translate-y-[-145%] md:translate-y-[-130%]`}
+          } absolute active:scale-90 transition-[0.2s] cursor-pointer w-[88vw] sm:w-[600px] md:w-[700px] self-center left-1/2 top-1/2 -translate-x-1/2 translate-y-[-145%] sm:translate-y-[-145%] md:translate-y-[-130%]`}
           src="/cursiveRachel.png"
         ></img>
 
         <img
-          className={`${
+          className={`title ${
             title === 11 ? "block" : "hidden"
-          } absolute active:scale-90 transition-[0.2s] cursor-pointer w-[80vw] md:w-[600px] self-center left-1/2 top-1/2 -translate-x-[50%] rotate-[-0deg] translate-y-[-130%] md:translate-y-[-115%]`}
+          } absolute active:scale-90 transition-[0.2s] cursor-pointer w-[80vw] md:w-[600px] self-center left-1/2 top-1/2 -translate-x-[50%] rotate-[-0deg] translate-y-[-125%] md:translate-y-[-115%]`}
           src="/fireRachel.gif"
         ></img>
 
         <img
-          className={`${
+          className={`title ${
             title === 12 ? "block" : "hidden"
-          } absolute active:scale-90 transition-[0.2s] cursor-pointer w-[85vw] md:w-[700px] self-center left-1/2 top-1/2 -translate-x-1/2 translate-y-[-153%] md:translate-y-[-125%]`}
+          } absolute active:scale-90 transition-[0.2s] cursor-pointer w-[85vw] md:w-[700px] self-center left-1/2 top-1/2 -translate-x-1/2 translate-y-[-140%] md:translate-y-[-125%]`}
           src="/breadRachel2.png"
         ></img>
 
@@ -114,9 +105,9 @@ const Title = () => {
           onClick={() => {
             console.log("hello");
           }}
-          className={`${
+          className={`title ${
             title === 13 ? "block" : "hidden"
-          } pointer-events-auto absolute active:scale-90 transition-[0.2s] cursor-pointer w-[70vw] md:w-[510px] self-center left-1/2 top-1/2 -translate-x-[50%] rotate-[-0deg] translate-y-[-117%] md:translate-y-[-100%] aspect-video`}
+          } pointer-events-auto absolute active:scale-90 transition-[0.2s] cursor-pointer w-[70vw] md:w-[510px] self-center left-1/2 top-1/2 -translate-x-[50%] rotate-[-0deg] translate-y-[-110%] md:translate-y-[-100%] aspect-video`}
         >
           <iframe
             className="pointer-events-none w-full h-full"
@@ -129,23 +120,23 @@ const Title = () => {
         </div>
 
         <img
-          className={`${
+          className={`title ${
             title === 14 ? "block" : "hidden"
-          } absolute active:scale-90 transition-[0.2s] cursor-pointer w-[80vw] md:w-[550px] self-center left-1/2 top-1/2 -translate-x-[48%] rotate-[-0deg] translate-y-[-125%] md:translate-y-[-110%]`}
+          } absolute active:scale-90 transition-[0.2s] cursor-pointer w-[80vw] md:w-[550px] self-center left-1/2 top-1/2 -translate-x-[48%] rotate-[-0deg] translate-y-[-120%] md:translate-y-[-110%]`}
           src="/graffitiRachel.png"
         ></img>
 
         <img
-          className={`${
+          className={`title ${
             title === 15 ? "block" : "hidden"
           } absolute active:scale-90 transition-[0.2s] cursor-pointer w-[50vw] md:w-[380px] self-center left-1/2 top-1/2 -translate-x-[50%] rotate-[-0deg] translate-y-[-140%] md:translate-y-[-120%]`}
           src="/alarmRachel.gif"
         ></img>
 
         <img
-          className={`${
+          className={`title ${
             title === 16 ? "block" : "hidden"
-          } absolute active:scale-90 transition-[0.2s] cursor-pointer w-[70vw] md:w-[550px] self-center left-1/2 top-1/2 -translate-x-[50%] rotate-[-0deg] translate-y-[-160%] md:translate-y-[-135%]`}
+          } absolute active:scale-90 transition-[0.2s] cursor-pointer w-[70vw] md:w-[550px] self-center left-1/2 top-1/2 -translate-x-[50%] rotate-[-0deg] translate-y-[-150%] md:translate-y-[-135%]`}
           src="/eggRachel.gif"
         ></img>
 
@@ -153,16 +144,16 @@ const Title = () => {
           onClick={() => {
             document.querySelector(".drawingRachel").play();
           }}
-          className={`${
+          className={`title ${
             title === 17 ? "block" : "hidden"
           } absolute active:scale-90 transition-[0.2s] cursor-pointer w-[80vw] md:w-[550px] self-center left-1/2 top-1/2 -translate-x-[50%] rotate-[-0deg] translate-y-[-160%] md:translate-y-[-135%]`}
           src="/gumRachel.png"
         ></img> */}
 
         <img
-          className={`${
+          className={`title ${
             title === 17 ? "block" : "hidden"
-          } absolute active:scale-90 transition-[0.2s] cursor-pointer w-[75vw] md:w-[500px] self-center left-1/2 top-1/2 -translate-x-1/2 translate-y-[-145%] md:translate-y-[-130%]`}
+          } absolute active:scale-90 transition-[0.2s] cursor-pointer w-[75vw] md:w-[500px] self-center left-1/2 top-1/2 -translate-x-1/2 translate-y-[-138%] md:translate-y-[-130%]`}
           src="/asciiRachel2.png"
         ></img>
 
@@ -170,7 +161,7 @@ const Title = () => {
           onClick={() => {
             document.querySelector(".drawingRachel").play();
           }}
-          className={`${
+          className={`title ${
             title === 18 ? "block" : "hidden"
           } absolute active:scale-90 transition-[0.2s] cursor-pointer w-[30vw] md:w-[190px] self-center left-1/2 top-1/2 -translate-x-[50%] rotate-[-0deg] translate-y-[-135%] md:translate-y-[-120%]`}
           src="/ringRachel.png"
@@ -182,19 +173,20 @@ const Title = () => {
             video.pause();
             video.currentTime = 0;
           }}
-          className={`${
+          className={`title ${
             title === 19 ? "block" : "hidden"
-          } pointer-events-auto absolute active:scale-90 transition-[0.2s] cursor-pointer w-[70vw] md:w-[510px] self-center left-1/2 top-1/2 -translate-x-[50%] rotate-[-0deg] translate-y-[-110%] md:translate-y-[-100%] aspect-video`}
+          } pointer-events-auto absolute active:scale-90 transition-[0.2s] cursor-pointer w-[70vw] md:w-[510px] self-center left-1/2 top-1/2 -translate-x-[50%] rotate-[-0deg] translate-y-[-108%] md:translate-y-[-100%] aspect-video`}
         >
           <video
-            className="drawingRachel pointer-events-none w-full h-full"
+            className="title drawingRachel pointer-events-none w-full h-full"
             src="/drawingRachel.mp4"
           ></video>
         </div>
+
         <img
-          className={`${
+          className={`title ${
             title === 20 ? "block" : "hidden"
-          } absolute active:scale-90 transition-[0.2s] cursor-pointer w-[80vw] md:w-[550px] self-center left-1/2 top-1/2 -translate-x-1/2 translate-y-[-140%] md:translate-y-[-125%]`}
+          } absolute active:scale-90 transition-[0.2s] cursor-pointer w-[80vw] md:w-[550px] self-center left-1/2 top-1/2 -translate-x-1/2 translate-y-[-135%] md:translate-y-[-125%]`}
           src="/filledRachel.png"
         ></img>
       </div>
