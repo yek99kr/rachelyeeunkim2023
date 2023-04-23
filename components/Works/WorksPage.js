@@ -1,10 +1,8 @@
 import WorkListPhoto from "./WorkListPhoto";
 import WorkListText from "./WorkListText";
 import { useContext, useState } from "react";
-import { motion } from "framer-motion";
 import { BsJustifyLeft, BsGrid, BsInstagram } from "react-icons/bs";
 import { AppContext } from "../../context/AppContext";
-import { VscMail } from "react-icons/vsc";
 
 const WorksPage = ({ works }) => {
   const { photo, updatePhoto } = useContext(AppContext);

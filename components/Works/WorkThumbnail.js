@@ -1,8 +1,6 @@
-import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import Video from "../Media/Video";
 
 const WorkThumbnail = ({ work }) => {
   const [hover, setHover] = useState(false);
@@ -23,7 +21,7 @@ const WorkThumbnail = ({ work }) => {
         <p
           className={`absolute transition-[0.3s] z-10 ${
             hover ? "opacity-1" : "sm:opacity-0"
-          } font-semibold`}
+          } font-[500]`}
         >
           {work.data.title}
         </p>

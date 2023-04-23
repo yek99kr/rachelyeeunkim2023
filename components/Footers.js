@@ -6,7 +6,7 @@ const Footers = () => {
   const [emailCopyed, isEmailCopyed] = useState(false);
   const { searchWord, updateSearchWord } = useContext(AppContext);
   return (
-    <div className="footer flex w-[100vw] fixed z-[100] bottom-0 p-3 md:p-4 pl-[2vw] md:pl-[1vw] text-sm lg:text-sm">
+    <div className="footer flex w-[100vw] fixed z-[100] bottom-0 p-3 md:p-4 pl-[0.8rem] md:pl-[1rem] text-sm lg:text-sm">
       <div className="drop-shadow-[0_0px_2px_white]">
         <div className="inline-block w-[7.7rem] sm:w-[18.3rem] h-[1rem]">
           <Link
@@ -85,7 +85,9 @@ const Footers = () => {
             </div>
           </Link>
         </div>
-        <div className={`inline cursor-pointer`}>Searchwords:</div>
+        <div className={`inline cursor-pointer sm:pl-[0.3rem]`}>
+          Searchwords:
+        </div>
         <div className="inline pl-[1vw] md:pl-[0.2vw] ">
           <p className="inline marquee marquee1 marq2  overflow-hidden ">
             <span>

@@ -42,7 +42,13 @@ export default function App({ router, Component, pageProps }) {
           href="https://fonts.googleapis.com/css2?family=Bellota&family=Underdog&display=swap"
           rel="stylesheet"
         />
-
+        <meta charSet="utf-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <title>Rachel Yeeun Kim</title>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+        />
         {/* <link rel="preload" href="https://example.com/widget.html" as="document"></link> */}
       </Head>
 
