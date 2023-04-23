@@ -9,7 +9,7 @@ const LinkButton = ({ slice }) => {
   return (
     <a
       href={slice.primary.link.url}
-      className="relative col-start-3 w-[50vw] md:w-[30vw]  cursor-pointer text-lg md:text-xl text-blue-800 underline transition-[0.2s] hover:opacity-70 mb-3 "
+      className="relative col-start-3 w-[90vw] md:w-[30vw]  cursor-pointer text-base md:text-xl text-blue-800 underline transition-[0.2s] hover:opacity-70 mb-3 "
       target="_blank"
       rel="noreferrer"
     >

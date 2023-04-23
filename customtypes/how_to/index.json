@@ -1,0 +1,56 @@
+{
+  "id": "how_to",
+  "label": "How to",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "how_to": {
+        "type": "Group",
+        "config": {
+          "label": "How to",
+          "fields": {
+            "title": {
+              "type": "Text",
+              "config": {
+                "label": "Title",
+                "placeholder": ""
+              }
+            },
+            "link": {
+              "type": "Link",
+              "config": {
+                "label": "Link",
+                "placeholder": "",
+                "select": null
+              }
+            },
+            "steps": {
+              "type": "Number",
+              "config": {
+                "label": "Steps",
+                "placeholder": ""
+              }
+            },
+            "rating": {
+              "type": "Number",
+              "config": {
+                "label": "Rating",
+                "placeholder": ""
+              }
+            },
+            "summary": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Summary",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap');
+
+
 html,
 body {
   padding: 0;
@@ -17,7 +20,6 @@ input {
  }
 
  input:focus, input.form-control:focus {
-
   outline:none !important;
   outline-width: 0 !important;
   box-shadow: none;
@@ -40,7 +42,7 @@ input {
 .marquee span {
   display: inline-block;
   margin-left: 0%;
-  animation: marquee 50s linear infinite;
+  animation: marquee 100s linear infinite;
   /* text-shadow: 0 0 5px #fff, 0 0 7px #fff; */
   
 }
@@ -64,3 +66,15 @@ input {
     transform: translate(-100%, 0);
   }
 }
+
+iframe
+{
+   background: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100% 100%"><text x="50%" y="50%" font-family="\'Lucida Grande\', sans-serif" font-size="24" text-anchor="middle">Loading</text></svg>') 0px 0px no-repeat;
+}
+
+/* .holds-the-iframe {
+  background:url(../public/loading-gif.gif);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+} */

@@ -1,7 +1,10 @@
 {
   "_cts": {
     "works": {},
-    "cute_dogs": {}
+    "cute_dogs": {},
+    "how_to": {
+      "how_to": {}
+    }
   },
   "slices": {
     "WorkDetailMedia16X9": {

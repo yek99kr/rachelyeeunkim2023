@@ -11,6 +11,7 @@ import { AppContextProvider } from "../context/AppContext";
 import SearchBar from "../components/SearchBar";
 import Router from "next/router";
 import { Inter } from "@next/font/google";
+
 import Head from "next/head";
 
 const inter = Inter({
@@ -41,8 +42,16 @@ export default function App({ router, Component, pageProps }) {
     <>
       <Head>
         {/* <link rel="preload" href="/path/to/image.ext" as="image" /> */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Bellota&family=Underdog&display=swap"
+          rel="stylesheet"
+        />
+
         {/* <link rel="preload" href="https://example.com/widget.html" as="document"></link> */}
       </Head>
+
       <PrismicProvider
         linkResolver={linkResolver}
         internalLinkComponent={({ href, children, ...props }) => (
@@ -53,16 +62,26 @@ export default function App({ router, Component, pageProps }) {
       >
         <PrismicPreview repositoryName={repositoryName}>
           <AppContextProvider>
-            <AnimatePresence
-              mode="wait"
-              // initial={false}
-              onExitComplete={() => window.scrollTo(0, 0)}
-            >
-              <main className={inter.className}>
-                {router.pathname !== "/" && <SearchBar />}
-                <Component {...pageProps} router={router} />
-              </main>
-            </AnimatePresence>
+            <main className={inter.className}>
+              <div
+                className={`transition-[0.5s] ${
+                  router.pathname !== "/"
+                    ? "opacity-100 pointer-events-auto"
+                    : "opacity-0 pointer-events-none"
+                }`}
+              >
+                <SearchBar />
+              </div>
+              <AnimatePresence
+                // mode="wait"
+                // initial={false}
+                exitBeforeEnter
+                onExitComplete={() => window.scrollTo(0, 0)}
+              >
+                <Component {...pageProps} router={router} key={router.asPath} />
+              </AnimatePresence>
+            </main>
+
             <Footers />
           </AppContextProvider>
         </PrismicPreview>

@@ -23,7 +23,7 @@ const WorkButtons = ({ work, works }) => {
         ) : (
           <div
             className={
-              "bg-white drop-shadow-[0_0px_4px_rgba(0,0,0,0.15)] w-[45.5vw] md:w-[47vw] rounded text-center p-2.5 text-black opacity-50  relative left-[3vw] md:left-[2vw] pointer-events-none cursor-not-allowed"
+              "bg-white drop-shadow-[0_0px_4px_rgba(0,0,0,0.15)] w-[45.5vw] md:w-[47vw] rounded text-center p-2.5 text-black opacity-40  relative left-[3vw] md:left-[2vw] pointer-events-none cursor-not-allowed"
             }
           >
             Previous
@@ -43,7 +43,7 @@ const WorkButtons = ({ work, works }) => {
         ) : (
           <div
             className={
-              "bg-white drop-shadow-[0_0px_4px_rgba(0,0,0,0.15)] w-[45.5vw]  md:w-[47vw]  rounded text-center p-2.5 text-black opacity-50 pointer-events-none cursor-not-allowed relative right-[3vw] md:right-[2vw]"
+              "bg-white drop-shadow-[0_0px_4px_rgba(0,0,0,0.15)] w-[45.5vw]  md:w-[47vw]  rounded text-center p-2.5 text-black opacity-40 pointer-events-none cursor-not-allowed relative right-[3vw] md:right-[2vw]"
             }
           >
             Next
@@ -53,7 +53,7 @@ const WorkButtons = ({ work, works }) => {
       {/* Desktop bottom Buttons */}
       <div className="flex relative w-screen justify-between items-center text-[2.9vw] sm:text-sm md:text-base pt-[3.3vw] sm:pt-[2vw] lg:pt-[6rem] pb-[3rem] md:pb-[3rem] ">
         {previousWork ? (
-          <Link href={`/works/${previousWork}`} passHref>
+          <Link href={`/works/${previousWork}`} passHref scroll={false}>
             <div
               className={
                 "bg-white drop-shadow-[0_0px_4px_rgba(0,0,0,0.15)] lg:w-[150px] xl:w-[140px] rounded text-center p-3 thumbcursor text-black duration-150 hover:text-gray-400 ml-[2vw] hidden lg:block"
@@ -67,7 +67,7 @@ const WorkButtons = ({ work, works }) => {
             <Link href="" className="pointer-events-none">
               <div
                 className={
-                  "bg-white drop-shadow-[0_0px_4px_rgba(0,0,0,0.15)] lg:w-[150px] xl:w-[140px] rounded text-center p-3 text-black opacity-50 ml-[2vw] pointer-events-none cursor-not-allowed hidden lg:block"
+                  "bg-white drop-shadow-[0_0px_4px_rgba(0,0,0,0.15)] lg:w-[150px] xl:w-[140px] rounded text-center p-3 text-black opacity-40 ml-[2vw] pointer-events-none cursor-not-allowed hidden lg:block"
                 }
               >
                 Previous
@@ -76,14 +76,14 @@ const WorkButtons = ({ work, works }) => {
           </div>
         )}
 
-        <Link href="/works" passHref>
+        <Link href="/works" passHref scroll={false}>
           <div className="bg-white drop-shadow-[0_0px_4px_rgba(0,0,0,0.15)] w-[94vw] md:w-[96vw] lg:w-[350px] xl:w-[455px] rounded text-center p-2.5 md:p-3 thumbcursor text-black duration-150 hover:text-gray-400">
             Back to Work
           </div>
         </Link>
 
         {nextWork ? (
-          <Link href={`/works/${nextWork}`} passHref>
+          <Link href={`/works/${nextWork}`} passHref scroll={false}>
             <div
               className={
                 "bg-white drop-shadow-[0_0px_4px_rgba(0,0,0,0.15)] lg:w-[150px] xl:w-[140px] rounded text-center p-3 thumbcursor text-black duration-150 hover:text-gray-400 mr-[2vw] hidden lg:block"
@@ -97,7 +97,7 @@ const WorkButtons = ({ work, works }) => {
             <Link href="">
               <div
                 className={
-                  "bg-white drop-shadow-[0_0px_4px_rgba(0,0,0,0.15)] lg:w-[400px] xl:w-[140px] rounded text-center p-3 text-black opacity-50 mr-[2vw] pointer-events-none cursor-not-allowed hidden lg:block"
+                  "bg-white drop-shadow-[0_0px_4px_rgba(0,0,0,0.15)] lg:w-[400px] xl:w-[140px] rounded text-center p-3 text-black opacity-40 mr-[2vw] pointer-events-none cursor-not-allowed hidden lg:block"
                 }
               >
                 Next

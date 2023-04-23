@@ -56,7 +56,7 @@ const WorkDetailMedia1X1 = ({ slice }) => {
       {slice.variation === "2Row" ? (
         <>
           {slice.primary.media1slider ? (
-            <div className="relative  col-start-3 lg:col-start-2 w-[94vw] lg:w-[35vw]   aspect-square">
+            <div className="relative  col-start-3 lg:col-start-2 w-[94vw] lg:w-[35vw]   aspect-square bg-gray-100">
               <div
                 ref={sliderRef}
                 className="keen-slider aspect-square min-w-[94vw] lg:min-w-[35vw]"
@@ -118,7 +118,7 @@ const WorkDetailMedia1X1 = ({ slice }) => {
             </div>
           ) : slice.primary.media1.link_type === "Web" ? (
             <>
-              <div className="col-start-3 lg:col-start-2 w-[94vw] lg:w-[35vw] relative  aspect-square">
+              <div className="col-start-3 lg:col-start-2 w-[94vw] lg:w-[35vw] relative  aspect-square bg-gray-100">
                 <iframe
                   className="w-[100%] h-[100%]"
                   src={`${slice.primary.media1.url.slice(6)}?quality=1080p${
@@ -133,7 +133,7 @@ const WorkDetailMedia1X1 = ({ slice }) => {
             </>
           ) : (
             <>
-              <div className="col-start-3 lg:col-start-2 w-[94vw] lg:w-[35vw] relative  aspect-square">
+              <div className="col-start-3 lg:col-start-2 w-[94vw] lg:w-[35vw] relative  aspect-square bg-gray-100">
                 <Image
                   src={slice.primary.media1.url}
                   alt={slice.primary.media1.alt}
@@ -147,7 +147,7 @@ const WorkDetailMedia1X1 = ({ slice }) => {
           )}
 
           {slice.primary.media2slider ? (
-            <div className="col-start-3 lg:col-start-4 w-[94vw] lg:w-[35vw] relative  aspect-square">
+            <div className="col-start-3 lg:col-start-4 w-[94vw] lg:w-[35vw] relative  aspect-square bg-gray-100">
               <div
                 ref={sliderRef2}
                 className="keen-slider aspect-square min-w-[94vw] lg:min-w-[35vw]"
@@ -209,7 +209,7 @@ const WorkDetailMedia1X1 = ({ slice }) => {
             </div>
           ) : slice.primary.media2.link_type === "Web" ? (
             <>
-              <div className="col-start-3 lg:col-start-4 w-[94vw] md:w-[35vw] relative rounded  aspect-square">
+              <div className="col-start-3 lg:col-start-4 w-[94vw] md:w-[35vw] relative rounded  aspect-square bg-gray-100">
                 <iframe
                   className="w-[100%] h-[100%]"
                   src={`${slice.primary.media2.url.slice(6)}?quality=1080p${
@@ -224,7 +224,7 @@ const WorkDetailMedia1X1 = ({ slice }) => {
             </>
           ) : (
             <>
-              <div className="col-start-3 lg:col-start-4 w-[94vw] md:w-[35vw] relative rounded  aspect-square">
+              <div className="col-start-3 lg:col-start-4 w-[94vw] md:w-[35vw] relative rounded  aspect-square bg-gray-100">
                 <Image
                   src={slice.primary.media2.url}
                   alt={slice.primary.media2.alt}
@@ -239,7 +239,7 @@ const WorkDetailMedia1X1 = ({ slice }) => {
         </>
       ) : slice.variation === "slider" ? (
         <>
-          <div className="col-start-3 aspect-square w-[94vw] md:w-[50vw] ">
+          <div className="col-start-3 aspect-square bg-gray-100 w-[94vw] md:w-[50vw] ">
             <div
               ref={sliderRef}
               className="  keen-slider aspect-square min-w-[96vw] md:min-w-[50vw]"
@@ -298,7 +298,7 @@ const WorkDetailMedia1X1 = ({ slice }) => {
       ) : slice.variation === "full" ? (
         <>
           {slice.primary.media.link_type === "Web" ? (
-            <div className="col-start-3 md:p-0 w-[96vw] md:w-[98vw]  aspect-square pointer-events-none">
+            <div className="col-start-3 md:p-0 w-[96vw] md:w-[98vw]  aspect-square bg-gray-100 pointer-events-none">
               <iframe
                 className="w-[100%] h-[100%]"
                 src={`${slice.primary.media.url.slice(6)}?quality=1080p${
@@ -312,7 +312,7 @@ const WorkDetailMedia1X1 = ({ slice }) => {
             </div>
           ) : (
             slice.primary.media.url && (
-              <div className="relative col-start-3 md:p-0 w-[96vw] md:w-[98vw]  aspect-square pointer-events-none">
+              <div className="relative col-start-3 md:p-0 w-[96vw] md:w-[98vw]  aspect-square bg-gray-100 pointer-events-none">
                 <Image
                   src={slice.primary.media.url}
                   alt={slice.primary.media.alt}
@@ -329,7 +329,7 @@ const WorkDetailMedia1X1 = ({ slice }) => {
         <>
           {slice.primary.media1.link_type === "Web" ? (
             <>
-              <div className="col-start-3 md:col-start-1 w-[94vw] md:w-[31vw] relative rounded md:place-self-start md:left-[2vw] aspect-square">
+              <div className="col-start-3 md:col-start-1 w-[94vw] md:w-[31vw] relative rounded md:place-self-start md:left-[2vw] aspect-square bg-gray-100">
                 <iframe
                   className="w-[100%] h-[100%]"
                   src={`${slice.primary.media1.url.slice(6)}?quality=1080p${
@@ -344,7 +344,7 @@ const WorkDetailMedia1X1 = ({ slice }) => {
             </>
           ) : (
             <>
-              <div className="col-start-3 md:col-start-1 w-[94vw] md:w-[31vw] relative rounded md:place-self-start md:left-[2vw] aspect-square">
+              <div className="col-start-3 md:col-start-1 w-[94vw] md:w-[31vw] relative rounded md:place-self-start md:left-[2vw] aspect-square bg-gray-100">
                 <Image
                   src={slice.primary.media1.url}
                   alt={slice.primary.media1.alt}
@@ -359,7 +359,7 @@ const WorkDetailMedia1X1 = ({ slice }) => {
 
           {slice.primary.media2.link_type === "Web" ? (
             <>
-              <div className="col-start-3 w-[94vw] md:w-[31vw] rounded aspect-square">
+              <div className="col-start-3 w-[94vw] md:w-[31vw] rounded aspect-square bg-gray-100">
                 <iframe
                   className="w-[100%] h-[100%]"
                   src={`${slice.primary.media2.url.slice(6)}?quality=1080p${
@@ -374,7 +374,7 @@ const WorkDetailMedia1X1 = ({ slice }) => {
             </>
           ) : (
             <>
-              <div className="relative col-start-3 w-[94vw] md:w-[31vw] rounded aspect-square">
+              <div className="relative col-start-3 w-[94vw] md:w-[31vw] rounded aspect-square bg-gray-100">
                 <Image
                   src={slice.primary.media2.url}
                   alt={slice.primary.media2.alt}
@@ -389,7 +389,7 @@ const WorkDetailMedia1X1 = ({ slice }) => {
 
           {slice.primary.media3.link_type === "Web" ? (
             <>
-              <div className="col-start-3 md:col-start-5 w-[94vw] md:w-[31vw] relative rounded md:place-self-end md:right-[2vw] aspect-square">
+              <div className="col-start-3 md:col-start-5 w-[94vw] md:w-[31vw] relative rounded md:place-self-end md:right-[2vw] aspect-square bg-gray-100">
                 <iframe
                   className="w-[100%] h-[100%]"
                   src={`${slice.primary.media3.url.slice(6)}?quality=1080p${
@@ -404,7 +404,7 @@ const WorkDetailMedia1X1 = ({ slice }) => {
             </>
           ) : (
             <>
-              <div className="relative col-start-3 md:col-start-5 w-[94vw] md:w-[31vw]  rounded md:place-self-end md:right-[2vw] aspect-square">
+              <div className="relative col-start-3 md:col-start-5 w-[94vw] md:w-[31vw]  rounded md:place-self-end md:right-[2vw] aspect-square bg-gray-100">
                 <Image
                   src={slice.primary.media3.url}
                   alt={slice.primary.media3.alt}
@@ -420,7 +420,7 @@ const WorkDetailMedia1X1 = ({ slice }) => {
       ) : (
         <>
           {slice.primary.media.link_type === "Web" ? (
-            <div className="col-start-3 md:p-0 w-[96vw] md:w-[50vw]  aspect-square ">
+            <div className="col-start-3 md:p-0 w-[94vw] md:w-[50vw] aspect-square bg-gray-100 ">
               <iframe
                 className="w-[100%] h-[100%]"
                 src={`${slice.primary.media.url.slice(6)}?quality=1080p${
@@ -434,7 +434,7 @@ const WorkDetailMedia1X1 = ({ slice }) => {
             </div>
           ) : (
             slice.primary.media.url && (
-              <div className="relative col-start-3 md:p-0 w-[96vw] md:w-[50vw]  aspect-square">
+              <div className="relative col-start-3 md:p-0 w-[94vw] md:w-[50vw]  aspect-square bg-gray-100">
                 <Image
                   src={slice.primary.media.url}
                   alt={slice.primary.media.alt}

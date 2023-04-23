@@ -9,7 +9,7 @@ const WorkDetailMedia9X16 = ({ slice }) => {
   return (
     <>
       {slice.primary.media.link_type === "Web" ? (
-        <div className="col-start-3 md:p-0 w-[96vw] md:w-[30vw]  aspect-[9/16]">
+        <div className="col-start-3  md:p-0 w-[96vw] md:w-[30vw]  aspect-[9/16] bg-gray-100">
           <iframe
             className="w-[100%] h-[100%]"
             src={`${slice.primary.media.url.slice(6)}?quality=1080p&loop=1${
@@ -23,7 +23,7 @@ const WorkDetailMedia9X16 = ({ slice }) => {
         </div>
       ) : (
         slice.primary.media.url && (
-          <div className="relative col-start-3 md:p-0 w-[96vw] md:w-[40vw]  aspect-[9/16]">
+          <div className="relative col-start-3  md:p-0 w-[96vw] md:w-[40vw]  aspect-[9/16] bg-gray-100">
             <Image
               src={slice.primary.media.url}
               alt={slice.primary.media.alt}

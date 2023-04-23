@@ -18,14 +18,16 @@ const Credits = ({ slice }) => {
 
   return (
     <>
-      <div className="text-center col-start-3 relative leading-[1.2rem] sm:leading-[1.4rem] text-xs md:text-sm w-[94vw] mt-[0vw]md:mt-[10px] ">
+      <div className="text-center col-start-3 relative leading-[1.2rem] sm:leading-[1.4rem] text-xs md:text-sm w-[94vw] mt-[0vw] md:mt-[10px] ">
         <div className="uppercase">Credits</div>
 
         <div className="">
-          <div className={`mt-0`}>
+          <div
+            className={`mt-0 w-[55%] lg:w-[34%] relative left-1/2 -translate-x-1/2`}
+          >
             {allCredits.map((credit, i) => {
               return (
-                <div key={i} className=" ">
+                <div key={i} className="">
                   <span className="">{credit.title} - </span>
                   {credit.name.map((person, i) => {
                     return (

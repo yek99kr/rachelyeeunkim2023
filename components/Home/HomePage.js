@@ -1,6 +1,6 @@
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { HiSearch } from "react-icons/hi";
-import { useContext, useState } from "react";
+import { useContext, useRef } from "react";
 import { AppContext } from "../../context/AppContext";
 import Title from "./Title";
 
@@ -8,27 +8,33 @@ const HomePage = () => {
   const router = useRouter();
 
   const { searchWord, updateSearchWord } = useContext(AppContext);
+  const ref = useRef();
 
   const handleSearch = (e) => {
     e.preventDefault();
-    const searchWord = document.getElementById("search").value;
+    const searchWord = ref.current.value;
     const searchWordUppercase = searchWord.toUpperCase();
 
     updateSearchWord(searchWord);
 
+    document.querySelector(".searchBar").value = searchWord;
+
     if (searchWordUppercase.includes("WORK")) {
       router.push(`/works`);
+
       // router.asPath !== "/works" && router.push(`/works`);
     } else if (searchWordUppercase.includes("CUTE" && "DOG")) {
-      router.push(`/cute-dogs`);
+      router.push(`/cute-dogs`, { scroll: false });
     } else if (searchWordUppercase.includes("ABOUT")) {
-      router.push(`/about`);
+      router.push(`/about`, { scroll: false });
     } else if (searchWordUppercase.includes("SHOP")) {
-      router.push(`/shop`);
+      router.push(`/shop`, { scroll: false });
     } else if (searchWordUppercase.includes("HOME")) {
-      router.push(`/`);
+      router.push(`/`, { scroll: false });
+    } else if (searchWordUppercase.includes("HOW" && "TO")) {
+      router.push(`/how-to`, { scroll: false });
     } else {
-      searchWord !== "" && router.push(`/${searchWord}`);
+      searchWord !== "" && router.push(`/${searchWord},`, { scroll: false });
     }
   };
 
@@ -39,15 +45,16 @@ const HomePage = () => {
         <form onSubmit={handleSearch}>
           {/* <HiSearch className="absolute right-0 z-10  m-[13px] w-[25px] h-[25px] cursor-pointer text-gray-400 hover:text-gray-900 transition-[0.5s]" /> */}
           <input
+            ref={ref}
             type="text"
             name="search"
-            id="search"
-            className="absolute w-[100%] h-[100%] pl-3 pr-10 rounded"
+            className="absolute w-[100%] h-[100%] pl-6 pr-11 rounded-full"
             placeholder="Search"
           ></input>
+
           <button
             type="submit"
-            className="absolute right-0 z-10  m-[12px] cursor-pointer text-gray-400 hover:text-gray-900 transition-[0.5s]"
+            className="absolute right-0 z-10  m-[12px] mr-[15px] cursor-pointer text-gray-400 hover:text-gray-900 transition-[0.5s]"
           >
             <HiSearch className="w-[20px] h-[20px] sm:w-[25px] sm:h-[25px]" />
           </button>

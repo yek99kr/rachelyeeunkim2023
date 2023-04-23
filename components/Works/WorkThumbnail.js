@@ -1,6 +1,8 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import Video from "../Media/Video";
 
 const WorkThumbnail = ({ work }) => {
   const [hover, setHover] = useState(false);
@@ -15,6 +17,8 @@ const WorkThumbnail = ({ work }) => {
           setHover(false);
         }}
         href={`/works/${work.uid}`}
+        passHref
+        scroll={false}
       >
         <p
           className={`absolute transition-[0.3s] z-10 ${
@@ -48,19 +52,26 @@ const WorkThumbnail = ({ work }) => {
               </>
             ) : (
               <Image
+                // onLoad={() => {
+                //   console.log("hi");
+                // }}
                 src={work.data.thumbnail.url}
                 alt={work.data.title}
                 priority={true}
                 loading="eager"
                 layout="fill"
                 objectFit="cover"
+                sizes=""
               ></Image>
             )}
           </>
         ) : (
           <iframe
+            onLoad={(e) => {
+              e.target.classList.toggle("animate");
+              console.log(e.target.classList);
+            }}
             className="w-[100%] h-[100%] pointer-events-none"
-            loading=" lazy"
             src={`${work.data.thumbnail.url.slice(
               6
             )}?quality=1080p&loop=1&background=1&autoplay=1&muted=1&controls=0
@@ -68,6 +79,13 @@ const WorkThumbnail = ({ work }) => {
             allowFullScreen
             frameBorder="0"
           ></iframe>
+          // <Video
+          //   src={`${work.data.thumbnail.url.slice(
+          //     6
+          //   )}?quality=1080p&loop=1&background=1&autoplay=1&muted=1&controls=0
+          //     }`}
+          //   className="w-[100%] h-[100%] pointer-events-none"
+          // />
         )}
       </Link>
     </>

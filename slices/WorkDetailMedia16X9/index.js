@@ -29,7 +29,7 @@ const WorkDetailMedia16X9 = ({ slice }) => {
             <>
               <div className="col-start-3 md:p-0 w-[100vw] md:w-[96vw] 2xl:w-[87vw] aspect-video">
                 <iframe
-                  className="w-[100%] h-[100%]"
+                  className="w-[100%] h-[100%] "
                   src={`${slice.primary.media.url.slice(6)}?quality=1080p${
                     slice.primary.autoplay
                       ? "&loop=1&autopause=0&background=1&autoplay=1&muted=1&controls=0"
@@ -68,7 +68,7 @@ const WorkDetailMedia16X9 = ({ slice }) => {
                 <div key={i} className={`keen-slider__slide w-full h-full`}>
                   {m.media.link_type === "Web" ? (
                     <iframe
-                      className="w-[100%] h-[100%] pointer-events-none"
+                      className="w-[100%] h-[100%]  pointer-events-none"
                       src={`${m.media.url.slice(
                         6
                       )}?quality=1080p&loop=1&autopause=0&background=1&autoplay=1&muted=1&controls=0
@@ -120,7 +120,7 @@ const WorkDetailMedia16X9 = ({ slice }) => {
           {slice.primary.media.link_type === "Web" ? (
             <div className="col-start-3 md:p-0 w-[96vw] md:w-[70vw]  aspect-video">
               <iframe
-                className="w-[100%] h-[100%]"
+                className="w-[100%] h-[100%] "
                 src={`${slice.primary.media.url.slice(6)}?quality=1080p${
                   slice.primary.autoplay
                     ? "&loop=1&autopause=0&background=1&autoplay=1&muted=1&controls=0"

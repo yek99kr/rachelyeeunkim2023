@@ -56,6 +56,86 @@ export interface CuteDogsDocumentDataDogsItem {
  * @typeParam Lang - Language API ID of the document.
  */
 export type CuteDogsDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<CuteDogsDocumentData>, "cute_dogs", Lang>;
+/** Content for How to documents */
+interface HowToDocumentData {
+    /**
+     * How to field in *How to*
+     *
+     * - **Field Type**: Group
+     * - **Placeholder**: *None*
+     * - **API ID Path**: how_to.how_to[]
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/group
+     *
+     */
+    how_to: prismicT.GroupField<Simplify<HowToDocumentDataHowToItem>>;
+}
+/**
+ * Item in How to → How to
+ *
+ */
+export interface HowToDocumentDataHowToItem {
+    /**
+     * Title field in *How to → How to*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: how_to.how_to[].title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    title: prismicT.KeyTextField;
+    /**
+     * Link field in *How to → How to*
+     *
+     * - **Field Type**: Link
+     * - **Placeholder**: *None*
+     * - **API ID Path**: how_to.how_to[].link
+     * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+     *
+     */
+    link: prismicT.LinkField;
+    /**
+     * Steps field in *How to → How to*
+     *
+     * - **Field Type**: Number
+     * - **Placeholder**: *None*
+     * - **API ID Path**: how_to.how_to[].steps
+     * - **Documentation**: https://prismic.io/docs/core-concepts/number
+     *
+     */
+    steps: prismicT.NumberField;
+    /**
+     * Rating field in *How to → How to*
+     *
+     * - **Field Type**: Number
+     * - **Placeholder**: *None*
+     * - **API ID Path**: how_to.how_to[].rating
+     * - **Documentation**: https://prismic.io/docs/core-concepts/number
+     *
+     */
+    rating: prismicT.NumberField;
+    /**
+     * Summary field in *How to → How to*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: how_to.how_to[].summary
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    summary: prismicT.RichTextField;
+}
+/**
+ * How to document from Prismic
+ *
+ * - **API ID**: `how_to`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type HowToDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<HowToDocumentData>, "how_to", Lang>;
 /** Content for works documents */
 interface WorksDocumentData {
     /**
@@ -151,7 +231,7 @@ type WorksDocumentDataSlicesSlice = CreditsSlice | DetailTextSlice | WorkDetailM
  * @typeParam Lang - Language API ID of the document.
  */
 export type WorksDocument<Lang extends string = string> = prismicT.PrismicDocumentWithUID<Simplify<WorksDocumentData>, "works", Lang>;
-export type AllDocumentTypes = CuteDogsDocument | WorksDocument;
+export type AllDocumentTypes = CuteDogsDocument | HowToDocument | WorksDocument;
 /**
  * Item in Credits → Items
  *
@@ -749,6 +829,6 @@ declare module "@prismicio/client" {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { CuteDogsDocumentData, CuteDogsDocumentDataDogsItem, CuteDogsDocument, WorksDocumentData, WorksDocumentDataSlicesSlice, WorksDocument, AllDocumentTypes, CreditsSliceDefaultItem, CreditsSliceDefault, CreditsSliceVariation, CreditsSlice, DetailTextSliceDefaultPrimary, DetailTextSliceDefault, DetailTextSliceVariation, DetailTextSlice, LinkButtonSliceDefaultPrimary, LinkButtonSliceDefault, LinkButtonSliceVariation, LinkButtonSlice, WorkDetailMedia16X9SliceDefaultPrimary, WorkDetailMedia16X9SliceDefault, WorkDetailMedia16X9SliceFullPrimary, WorkDetailMedia16X9SliceFull, WorkDetailMedia16X9SliceSliderItem, WorkDetailMedia16X9SliceSlider, WorkDetailMedia16X9SliceVariation, WorkDetailMedia16X9Slice, WorkDetailMedia1X1SliceDefaultPrimary, WorkDetailMedia1X1SliceDefault, WorkDetailMedia1X1Slice2RowPrimary, WorkDetailMedia1X1Slice2RowItem, WorkDetailMedia1X1Slice2Row, WorkDetailMedia1X1SliceSliderItem, WorkDetailMedia1X1SliceSlider, WorkDetailMedia1X1SliceFullPrimary, WorkDetailMedia1X1SliceFull, WorkDetailMedia1X1Slice3RowsPrimary, WorkDetailMedia1X1Slice3Rows, WorkDetailMedia1X1SliceVariation, WorkDetailMedia1X1Slice, WorkDetailMedia9X16SliceDefaultPrimary, WorkDetailMedia9X16SliceDefault, WorkDetailMedia9X16SliceVariation, WorkDetailMedia9X16Slice };
+        export type { CuteDogsDocumentData, CuteDogsDocumentDataDogsItem, CuteDogsDocument, HowToDocumentData, HowToDocumentDataHowToItem, HowToDocument, WorksDocumentData, WorksDocumentDataSlicesSlice, WorksDocument, AllDocumentTypes, CreditsSliceDefaultItem, CreditsSliceDefault, CreditsSliceVariation, CreditsSlice, DetailTextSliceDefaultPrimary, DetailTextSliceDefault, DetailTextSliceVariation, DetailTextSlice, LinkButtonSliceDefaultPrimary, LinkButtonSliceDefault, LinkButtonSliceVariation, LinkButtonSlice, WorkDetailMedia16X9SliceDefaultPrimary, WorkDetailMedia16X9SliceDefault, WorkDetailMedia16X9SliceFullPrimary, WorkDetailMedia16X9SliceFull, WorkDetailMedia16X9SliceSliderItem, WorkDetailMedia16X9SliceSlider, WorkDetailMedia16X9SliceVariation, WorkDetailMedia16X9Slice, WorkDetailMedia1X1SliceDefaultPrimary, WorkDetailMedia1X1SliceDefault, WorkDetailMedia1X1Slice2RowPrimary, WorkDetailMedia1X1Slice2RowItem, WorkDetailMedia1X1Slice2Row, WorkDetailMedia1X1SliceSliderItem, WorkDetailMedia1X1SliceSlider, WorkDetailMedia1X1SliceFullPrimary, WorkDetailMedia1X1SliceFull, WorkDetailMedia1X1Slice3RowsPrimary, WorkDetailMedia1X1Slice3Rows, WorkDetailMedia1X1SliceVariation, WorkDetailMedia1X1Slice, WorkDetailMedia9X16SliceDefaultPrimary, WorkDetailMedia9X16SliceDefault, WorkDetailMedia9X16SliceVariation, WorkDetailMedia9X16Slice };
     }
 }

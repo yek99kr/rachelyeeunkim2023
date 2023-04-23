@@ -24,12 +24,8 @@ export function AppContextProvider({ children }) {
     setPhoto(!photo);
   }
 
-  function updateTitle() {
-    if (title > 10) {
-      setTitle(title + 1);
-    } else {
-      setTitle(1);
-    }
+  function updateTitle(title) {
+    setTitle(title);
   }
 
   return (

@@ -1,0 +1,60 @@
+{
+  "how_to": {
+    "__TYPE__": "GroupContentType",
+    "value": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": [
+          [
+            "title",
+            {
+              "__TYPE__": "FieldContent",
+              "value": "sides",
+              "type": "Text"
+            }
+          ],
+          [
+            "link",
+            {
+              "__TYPE__": "LinkContent",
+              "value": {
+                "__TYPE__": "ExternalLink",
+                "url": "http://twitter.com"
+              }
+            }
+          ],
+          [
+            "steps",
+            {
+              "__TYPE__": "FieldContent",
+              "value": "15",
+              "type": "Number"
+            }
+          ],
+          [
+            "rating",
+            {
+              "__TYPE__": "FieldContent",
+              "value": "68",
+              "type": "Number"
+            }
+          ],
+          [
+            "summary",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Quis labore cupidatat minim excepteur proident elit excepteur ex. Et laboris culpa cillum enim sit fugiat adipisicing ut dolor commodo labore ut. Ullamco nisi excepteur dolor commodo elit officia veniam consectetur amet commodo dolore."
+                  }
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  }
+}

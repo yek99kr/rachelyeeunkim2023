@@ -7,8 +7,13 @@ const WorkListText = ({ works }) => {
       <div className=" w-[100vw] pl-[2vw] md:pl-[1vw] mt-[80px] mb-[50px] lg:mb-[80px]">
         <p className="text-gray-500 mb-5">About {works.length} results</p>
         {works.map((work, i) => (
-          <Link href={`/works/${work.uid}`} key={work.uid}>
-            <div className="relative rounded justify-self-start w-[90vw] md:w-[35vw] mb-10">
+          <Link
+            href={`/works/${work.uid}`}
+            key={work.uid}
+            passHref
+            scroll={false}
+          >
+            <div className="relative rounded justify-self-start w-[90vw] md:w-[35vw] mb-8 md:mb-10">
               <div className="flex mb-1">
                 <img
                   className="rounded-full border-[1px] border-gray-100 bg-gray-100 w-8 h-8 inline mr-2 m-0.5"
