@@ -13,7 +13,7 @@ const WorksPage = ({ works }) => {
         onClick={() => {
           updatePhoto(!photo);
         }}
-        className="z-[1000] fixed hover:text-gray-400 transition-[0.2s] drop-shadow-[0_0px_4px_rgba(0,0,0,0.15)] bg-white rounded right-[2vw] md:right-[1vw] bottom-[15px] lg:top-[15px] w-[40px] h-[40px] md:w-[50px] md:h-[50px] text-2xl md:text-3xl p-2 md:p-2.5 cursor-pointer"
+        className="z-[1000] fixed hover:text-gray-400 transition-[0.2s] drop-shadow-[0_0px_4px_rgba(0,0,0,0.15)] bg-white rounded right-[2vw] md:right-[1vw] bottom-[15px] lg:top-[15px] w-[40px] h-[40px] md:w-[50px] md:h-[50px] text-2xl md:text-3xl p-2 md:p-2.5 cursor-pointer overflow-x-hidden"
       >
         {photo ? <BsJustifyLeft /> : <BsGrid />}
       </div>
