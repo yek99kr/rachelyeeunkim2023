@@ -42,7 +42,9 @@ const SearchBar = () => {
     <>
       <div className="z-[1000] fixed drop-shadow-[0_0px_4px_rgba(0,0,0,0.15)] left-[2vw] md:left-[1vw] top-[15px] w-[96vw] md:w-[98vw] lg:w-[32vw] h-[43px] md:h-[50px] text-lg ">
         <Link href="/" passHref scroll={false}>
-          <div className="absolute rounded-full z-10 m-[9px] md:m-[10px] w-[26px] md:w-[30px] aspect-square bg-black"></div>
+          <div className="absolute rounded-full z-10 m-[9px] md:ml-[12px] md:m-[10px] w-[26px] md:w-[30px] aspect-square ">
+            <img className="w-[96%]" src="/R.png"></img>
+          </div>
         </Link>
 
         <form onSubmit={handleSearch}>

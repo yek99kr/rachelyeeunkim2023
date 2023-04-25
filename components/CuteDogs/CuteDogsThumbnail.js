@@ -11,7 +11,7 @@ const CuteDogsThumbnail = ({ dog, i }) => {
       onMouseLeave={() => {
         setHover(false);
       }}
-      className={`relative w-[47vw] md:w-[23.75vw]  aspect-square rounded bg-gray-100 ${
+      className={`relative w-[47.1vw] md:w-[23.75vw]  aspect-square rounded bg-gray-100 ${
         dog.link.url && "cursor-pointer"
       }`}
       key={i}
@@ -36,7 +36,7 @@ const CuteDogsThumbnail = ({ dog, i }) => {
           ></Image>
         ) : (
           <div
-            className=" relative rounded justify-self-center w-[47vw] md:w-[23.75vw] aspect-square bg-gray-100 overflow-hidden cursor-pointer"
+            className=" relative rounded justify-self-center w-[47.1vw] md:w-[23.75vw] aspect-square bg-gray-100 overflow-hidden cursor-pointer"
             // key={dog.dog.url.slice(-5)}
           >
             <iframe
