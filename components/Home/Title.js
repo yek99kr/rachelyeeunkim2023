@@ -8,9 +8,9 @@ const Title = () => {
   return (
     <>
       <div
-        className="select-none"
+        className="select-none title"
         onClick={() => {
-          if (title < 21) {
+          if (title < 22) {
             updateTitle(title + 1);
           } else {
             updateTitle(1);
@@ -100,12 +100,19 @@ const Title = () => {
           src="/title/breadRachel2.png"
         ></img>
 
+        <img
+          className={`title ${
+            title === 13 ? "block" : "hidden"
+          } absolute active:scale-90 transition-[0.2s] cursor-pointer w-[80vw] md:w-[550px] self-center left-1/2 top-1/2 -translate-x-1/2 translate-y-[-120%] md:translate-y-[-115%]`}
+          src="/title/teleRachel.png"
+        ></img>
+
         <div
           onClick={() => {
             console.log("hello");
           }}
           className={`title ${
-            title === 13 ? "block" : "hidden"
+            title === 14 ? "block" : "hidden"
           } pointer-events-auto absolute active:scale-90 transition-[0.2s] cursor-pointer w-[70vw] md:w-[510px] self-center left-1/2 top-1/2 -translate-x-[50%] rotate-[-0deg] translate-y-[-105%] md:translate-y-[-100%] aspect-video`}
         >
           <iframe
@@ -117,13 +124,6 @@ const Title = () => {
             // frameBorder="0"
           ></iframe>
         </div>
-
-        <img
-          className={`title ${
-            title === 14 ? "block" : "hidden"
-          } absolute active:scale-90 transition-[0.2s] cursor-pointer w-[80vw] md:w-[550px] self-center left-1/2 top-1/2 -translate-x-1/2 translate-y-[-120%] md:translate-y-[-115%]`}
-          src="/title/teleRachel.png"
-        ></img>
 
         <img
           className={`title ${
@@ -149,6 +149,13 @@ const Title = () => {
         <img
           className={`title ${
             title === 18 ? "block" : "hidden"
+          } absolute active:scale-90 transition-[0.2s] cursor-pointer w-[75vw] md:w-[500px] self-center left-1/2 top-1/2 -translate-x-1/2 translate-y-[-140%] md:translate-y-[-135%]`}
+          src="/title/logoRachel.png"
+        ></img>
+
+        <img
+          className={`title ${
+            title === 19 ? "block" : "hidden"
           } absolute active:scale-90 transition-[0.2s] cursor-pointer w-[75vw] md:w-[500px] self-center left-1/2 top-1/2 -translate-x-1/2 translate-y-[-150%] md:translate-y-[-155%]`}
           src="/title/asciiRachel.png"
         ></img>
@@ -162,7 +169,7 @@ const Title = () => {
 
         <img
           className={`title ${
-            title === 19 ? "block" : "hidden"
+            title === 20 ? "block" : "hidden"
           } absolute active:scale-90 transition-[0.2s] cursor-pointer w-[30vw] md:w-[190px] self-center left-1/2 top-1/2 -translate-x-[50%] rotate-[-0deg] translate-y-[-125%] md:translate-y-[-120%]`}
           src="/title/ringRachel.png"
         ></img>
@@ -172,7 +179,7 @@ const Title = () => {
             document.querySelector(".drawingRachel").play();
           }}
           className={`title ${
-            title === 20 ? "block" : "hidden"
+            title === 21 ? "block" : "hidden"
           } absolute active:scale-90 transition-[0.2s] cursor-pointer w-[80vw] md:w-[550px] self-center left-1/2 top-1/2 -translate-x-1/2 translate-y-[-130%] md:translate-y-[-125%]`}
           src="/title/filledRachel.png"
         ></img>
@@ -184,7 +191,7 @@ const Title = () => {
             video.currentTime = 0;
           }}
           className={`title ${
-            title === 21 ? "block" : "hidden"
+            title === 22 ? "block" : "hidden"
           } pointer-events-auto absolute active:scale-90 transition-[0.2s] cursor-pointer w-[70vw] md:w-[510px] self-center left-1/2 top-1/2 -translate-x-[50%] rotate-[-0deg] translate-y-[-102%] md:translate-y-[-100%] aspect-video`}
         >
           <video

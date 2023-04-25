@@ -92,7 +92,7 @@ const WorkDetailMedia1X1 = ({ slice }) => {
                   ))}
               </div>
               {loaded && instanceRef.current && (
-                <div className="relative top-[-7%] md:top-[-6%] mb-[-7%] md:mb-[-5.5%]">
+                <div className="relative top-[-7.5%]  md:top-[-7%] lg:top-[-5%] mb-[-7%] md:mb-[-5.5%]">
                   {[
                     ...Array(
                       instanceRef.current.track.details.slides.length
@@ -105,7 +105,7 @@ const WorkDetailMedia1X1 = ({ slice }) => {
                           instanceRef.current?.moveToIdx(idx);
                         }}
                         className={
-                          " drop-shadow-[0_0_8px_rgba(0,0,0,0.3)] opacity-100 rounded-full  m-[0.2rem] md:m-1 w-[6.5%] h-[3.5px] md:w-[5.5%] md:h-[5px] " +
+                          " drop-shadow-[0_0_8px_rgba(0,0,0,0.3)] opacity-100 rounded-full  m-[0.2rem] md:m-1 w-[8.5%] h-[3.5px] md:w-[5.5%] md:h-[5px] " +
                           (currentSlide === idx
                             ? " active bg-white"
                             : "bg-gray-400 ")
@@ -183,7 +183,7 @@ const WorkDetailMedia1X1 = ({ slice }) => {
                   ))}
               </div>
               {loaded2 && instanceRef2.current && (
-                <div className="relative top-[-7%] md:top-[-6%]  mb-[-7%] md:mb-[-5.5%] ">
+                <div className="relative top-[-7.5%]  md:top-[-7%] lg:top-[-5%]  mb-[-7%] md:mb-[-5.5%] ">
                   {[
                     ...Array(
                       instanceRef2.current.track.details.slides.length
@@ -196,7 +196,7 @@ const WorkDetailMedia1X1 = ({ slice }) => {
                           instanceRef2.current?.moveToIdx(idx);
                         }}
                         className={
-                          " drop-shadow-[0_0_8px_rgba(0,0,0,0.3)] opacity-100 rounded-full  m-[0.2rem] md:m-1 w-[6.5%] h-[3.5px] md:w-[5.5%] md:h-[5px] " +
+                          " drop-shadow-[0_0_8px_rgba(0,0,0,0.3)] opacity-100 rounded-full  m-[0.2rem] md:m-1 w-[8.5%] h-[3.5px] md:w-[5.5%] md:h-[5px] " +
                           (currentSlide2 === idx
                             ? " active bg-white"
                             : "bg-gray-400 ")
@@ -270,7 +270,7 @@ const WorkDetailMedia1X1 = ({ slice }) => {
               ))}
             </div>
             {loaded && instanceRef.current && (
-              <div className="relative top-[-7%] md:top-[-5.5%]  mb-[-7%] md:mb-[-5.5%]">
+              <div className="relative top-[-7.5%] md:top-[-7%] lg:top-[-5%] mb-[-7%] md:mb-[-5.5%]">
                 {[
                   ...Array(
                     instanceRef.current.track.details.slides.length
@@ -283,7 +283,7 @@ const WorkDetailMedia1X1 = ({ slice }) => {
                         instanceRef.current?.moveToIdx(idx);
                       }}
                       className={
-                        " drop-shadow-[0_0_8px_rgba(0,0,0,0.3)] opacity-100 rounded-full  m-[0.2rem] md:m-1 w-[6.5%] h-[3.5px] md:w-[4%] md:h-[5px] " +
+                        " drop-shadow-[0_0_8px_rgba(0,0,0,0.3)] opacity-100 rounded-full  m-[0.2rem] md:m-1 w-[8.5%] h-[3.5px] md:w-[6%] md:h-[5px] " +
                         (currentSlide === idx
                           ? " active bg-white"
                           : "bg-gray-400 ")

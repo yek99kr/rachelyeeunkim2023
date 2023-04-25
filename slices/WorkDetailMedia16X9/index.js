@@ -90,7 +90,7 @@ const WorkDetailMedia16X9 = ({ slice }) => {
               ))}
             </div>
             {loaded && instanceRef.current && (
-              <div className="relative top-[-9.5%] md:top-[-5.5%] mb-[-7%] md:mb-[-5.5%]">
+              <div className="relative top-[-12%] md:top-[-5.5%] mb-[-7%] md:mb-[-5.5%]">
                 {[
                   ...Array(
                     instanceRef.current.track.details.slides.length
@@ -103,7 +103,7 @@ const WorkDetailMedia16X9 = ({ slice }) => {
                         instanceRef.current?.moveToIdx(idx);
                       }}
                       className={
-                        " drop-shadow-[0_0_8px_rgba(0,0,0,0.3)] opacity-100 rounded-full  m-[0.2rem] md:m-1 w-[6.5%] h-[3.5px] md:w-[4%] md:h-[5px] " +
+                        " drop-shadow-[0_0_8px_rgba(0,0,0,0.3)] opacity-100 rounded-full  m-[0.2rem] md:m-1 w-[8.5%] h-[3.5px] md:w-[4%] md:h-[5px] " +
                         (currentSlide === idx
                           ? " active bg-white"
                           : "bg-gray-400")

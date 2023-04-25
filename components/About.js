@@ -1,13 +1,41 @@
 import Image from "next/image";
+import { useState } from "react";
 
 const About = () => {
+  const [title, updateTitle] = useState(1);
   return (
     <div className="pl-[2vw] md:pl-[1vw] mt-[80px] mb-[50px] lg:mb-[55px] ">
-      All about me
-      {/* <div className="border-1 w-[400px] h-[600px]  rounded bg-gray-100 border border-gray-400">
-        <div className="bg-gray-300 w-[200px] h-[300px] "></div>
-        <div className=" ">Name: Rachel Kim</div>
-      </div> */}
+      <div
+        className="select-none title"
+        onClick={() => {
+          if (title < 2) {
+            updateTitle(title + 1);
+          } else {
+            updateTitle(1);
+          }
+        }}
+      >
+        <div
+          className={`title ${
+            title === 1 ? "block" : "hidden"
+          } absolute  transition-[0.2s] cursor-pointer w-[95vw] md:w-[760px] self-center left-1/2 top-1/2 -translate-x-1/2 translate-y-[-50%] md:translate-y-[-50%]`}
+        >
+          <img
+            className={`pointer-events-none w-full h-full`}
+            src="/about/abouthi.png"
+          ></img>
+        </div>
+        <div
+          className={`title ${
+            title === 2 ? "block" : "hidden"
+          } absolute  transition-[0.2s] cursor-pointer w-[95vw] md:w-[760px] self-center left-1/2 top-1/2 -translate-x-1/2 translate-y-[-50%] md:translate-y-[-50%]`}
+        >
+          <img
+            className={`pointer-events-none w-full h-full`}
+            src="/about/abouthi.png"
+          ></img>
+        </div>
+      </div>
     </div>
   );
 };

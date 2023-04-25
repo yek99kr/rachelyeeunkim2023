@@ -34,7 +34,7 @@ const WorksPage = ({ works }) => {
       )} */}
 
       <div
-        className={`absolute transition-[0.2s] ${photo ? "block" : "hidden"}`}
+        className={`absolute transition-[0.2s] ${photo ? "block" : "hidden"} `}
       >
         <WorkListPhoto works={works} />
       </div>

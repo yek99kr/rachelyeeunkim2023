@@ -41,14 +41,18 @@ const HomePage = () => {
   return (
     <>
       <Title />
-      <div className="z-[10] drop-shadow-[0_0px_0.2rem_rgba(0,0,0,0.2)] sm:drop-shadow-[0_0px_4px_rgba(0,0,0,0.15)] absolute left-1/2 top-1/2 -translate-x-1/2 translate-y-[-40%] md:translate-y-[-40%]  w-[75vw] h-[43px] sm:w-[500px] sm:h-[50px] text-base sm:text-lg ">
+      <img
+        src="/searchBar.png"
+        className="absolute block sm:hidden w-[430px] left-1/2 top-1/2 -translate-x-[49.5%] translate-y-[-42%]"
+      ></img>
+      <div className="z-[10]  sm:drop-shadow-[0_0px_4px_rgba(0,0,0,0.15)] absolute left-1/2 top-1/2 -translate-x-1/2 translate-y-[-40%] md:translate-y-[-40%]  w-[390px] h-[43px] sm:w-[500px] sm:h-[50px] text-base sm:text-lg ">
         <form onSubmit={handleSearch}>
           {/* <HiSearch className="absolute right-0 z-10  m-[13px] w-[25px] h-[25px] cursor-pointer text-gray-400 hover:text-gray-900 transition-[0.5s]" /> */}
           <input
             ref={ref}
             type="text"
             name="search"
-            className="absolute w-[100%] h-[100%] pl-6 pr-11 rounded-full"
+            className="absolute w-[100%] h-[100%] pl-6 pr-11 rounded-full bg-transparent sm:bg-white"
             placeholder="Search"
           ></input>
 
