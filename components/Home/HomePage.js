@@ -43,9 +43,9 @@ const HomePage = () => {
       <Title />
       <img
         src="/searchBar.png"
-        className="absolute block sm:hidden w-[430px] left-1/2 top-1/2 -translate-x-[49.5%] translate-y-[-42%]"
+        className="absolute pointer-events-none block sm:hidden w-[90vw] left-1/2 top-1/2 -translate-x-[49.5%] translate-y-[-39%]"
       ></img>
-      <div className="z-[10]  sm:drop-shadow-[0_0px_4px_rgba(0,0,0,0.15)] absolute left-1/2 top-1/2 -translate-x-1/2 translate-y-[-40%] md:translate-y-[-40%]  w-[390px] h-[43px] sm:w-[500px] sm:h-[50px] text-base sm:text-lg ">
+      <div className="z-[10]  sm:drop-shadow-[0_0px_4px_rgba(0,0,0,0.15)] absolute left-1/2 top-1/2 -translate-x-1/2 translate-y-[-35%] md:translate-y-[-40%]  w-[80vw] h-[8.5vw] sm:w-[500px] sm:h-[50px] text-[3vw] sm:text-lg ">
         <form onSubmit={handleSearch}>
           {/* <HiSearch className="absolute right-0 z-10  m-[13px] w-[25px] h-[25px] cursor-pointer text-gray-400 hover:text-gray-900 transition-[0.5s]" /> */}
           <input
@@ -60,7 +60,7 @@ const HomePage = () => {
             type="submit"
             className="absolute right-0 z-10 m-[12px] mr-[15px] cursor-pointer text-gray-400 hover:text-gray-900 transition-[0.5s]"
           >
-            <HiSearch className="w-[20px] h-[20px] sm:w-[25px] sm:h-[25px]" />
+            <HiSearch className="w-[4vw] h-[4vw] sm:w-[25px] sm:h-[25px]" />
           </button>
         </form>
       </div>
