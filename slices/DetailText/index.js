@@ -10,7 +10,7 @@ const DetailText = ({ slice }) => {
   // console.log(slice.primary.text);
   return (
     <>
-      <div className="div col-start-3 relative leading-[1.15rem] md:leading-6 text-base md:text-xl text-center w-[93vw] md:w-[70vw] lg:w-[55vw]  xl:w-[40vw]">
+      <div className="div col-start-3 relative leading-[1.2rem] md:leading-6 text-base md:text-xl text-center w-[93vw] md:w-[70vw] lg:w-[55vw]  xl:w-[40vw]">
         {/* <div className="text-left">
           <PrismicRichText field={slice.primary.text} />
         </div> */}
