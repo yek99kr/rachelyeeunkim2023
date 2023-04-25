@@ -3,11 +3,10 @@ import { useState, useContext } from "react";
 import { AppContext } from "../context/AppContext";
 
 const Footers = () => {
-  const [emailCopyed, isEmailCopyed] = useState(false);
   const { searchWord, updateSearchWord } = useContext(AppContext);
   return (
     <div className="footer flex w-[100vw] fixed z-[100] bottom-0 p-3 md:p-4 pl-[0.8rem] md:pl-[1rem] text-sm lg:text-sm">
-      <div className="drop-shadow-[0_0px_2px_white]">
+      <div className="drop-shadow-[0_0px_2px_white] ">
         <div className="inline-block w-[7.7rem] sm:w-[18.3rem] h-[1rem]">
           <Link
             onClick={() => {
@@ -19,7 +18,7 @@ const Footers = () => {
             scroll={false}
           >
             <div
-              className={`hover:font-['Bellota'] hover:text-[0.86rem] inline cursor-pointer`}
+              className={`sm:hover:font-['Bellota'] sm:hover:text-[0.86rem] inline cursor-pointer`}
             >
               Works
             </div>
@@ -35,7 +34,7 @@ const Footers = () => {
             scroll={false}
           >
             <div
-              className={`hover:font-['Bellota']  hover:text-[0.88rem]  sm:inline hidden pl-[0.6rem] md:pl-[0.6rem] cursor-pointer`}
+              className={`sm:hover:font-['Bellota'] sm: hover:text-[0.88rem]  sm:inline hidden pl-[0.6rem] md:pl-[0.6rem] cursor-pointer`}
             >
               About
             </div>
@@ -47,14 +46,14 @@ const Footers = () => {
             rel="noreferrer"
           >
             <div
-              className={`hover:font-['Bellota'] hover:text-[0.89rem] inline pl-[0.6rem] md:pl-[0.6rem]  cursor-pointer`}
+              className={`sm:hover:font-['Bellota'] sm:hover:text-[0.89rem] inline  pl-[0.6rem] md:pl-[0.6rem]  cursor-pointer`}
             >
               Instagram
             </div>
           </Link>
           <a href="mailto: hi@rachelyeeunkim.com">
             <div
-              className={`hover:font-['Bellota'] hover:text-[0.855rem] hidden sm:inline pl-[0.6rem] md:pl-[0.6rem] cursor-pointer`}
+              className={`sm:hover:font-['Bellota'] sm:hover:text-[0.855rem] hidden sm:inline pl-[0.6rem] md:pl-[0.6rem] cursor-pointer`}
             >
               Email
             </div>
@@ -81,7 +80,7 @@ const Footers = () => {
             scroll={false}
           >
             <div
-              className={`hover:font-['Bellota'] hover:text-[0.9rem] hidden sm:inline pl-[0.6rem] md:pl-[0.6rem] cursor-pointer`}
+              className={`sm:hover:font-['Bellota'] sm:hover:text-[0.9rem] hidden sm:inline pl-[0.6rem] md:pl-[0.6rem] cursor-pointer`}
             >
               Cute dogs
             </div>

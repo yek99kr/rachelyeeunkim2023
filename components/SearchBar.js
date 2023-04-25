@@ -56,6 +56,7 @@ const SearchBar = () => {
             defaultValue={searchWord}
             className="searchBar absolute w-[100%] h-[100%] pl-[47px] md:pl-[49px] pr-[45px] rounded-full"
             placeholder="Search"
+            autoComplete="off"
           ></input>
           <button
             type="submit"

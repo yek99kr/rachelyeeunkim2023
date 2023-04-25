@@ -10,6 +10,7 @@ import { useState, useEffect } from "react";
 import { AppContextProvider } from "../context/AppContext";
 import SearchBar from "../components/SearchBar";
 import Router from "next/router";
+import Menu from "../components/Menu";
 
 import Head from "next/head";
 
@@ -100,6 +101,7 @@ export default function App({ router, Component, pageProps }) {
                 }`}
               >
                 <SearchBar />
+                <Menu />
               </div>
               <AnimatePresence
                 // mode="wait"

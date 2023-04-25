@@ -7,7 +7,7 @@ const HowTo = ({ HowTos }) => {
 
   return (
     <>
-      <div className=" w-[100vw] pl-[2vw] md:pl-[1vw] mt-[80px] mb-[50px] lg:mb-[80px]">
+      <div className=" w-[100vw] pl-[2vw] md:pl-[1vw] mt-[80px] mb-[50px] lg:mb-[80px] pt-9 sm:pt-0">
         <p className="text-gray-500 mb-5">About {HowTo.length} results</p>
         {HowTo.map((howto, i) => (
           <div
