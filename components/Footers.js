@@ -35,7 +35,7 @@ const Footers = () => {
             scroll={false}
           >
             <div
-              className={`hover:font-['Bellota'] hover:text-[0.87rem]  sm:inline hidden pl-[0.6rem] md:pl-[0.6rem] cursor-pointer`}
+              className={`hover:font-['Bellota']  hover:text-[0.88rem]  sm:inline hidden pl-[0.6rem] md:pl-[0.6rem] cursor-pointer`}
             >
               About
             </div>
@@ -52,12 +52,13 @@ const Footers = () => {
               Instagram
             </div>
           </Link>
-
-          <div
-            className={`hover:font-['Bellota'] hover:text-[0.855rem] hidden sm:inline pl-[0.6rem] md:pl-[0.6rem] cursor-pointer`}
-          >
-            Email
-          </div>
+          <a href="mailto: hi@rachelyeeunkim.com">
+            <div
+              className={`hover:font-['Bellota'] hover:text-[0.855rem] hidden sm:inline pl-[0.6rem] md:pl-[0.6rem] cursor-pointer`}
+            >
+              Email
+            </div>
+          </a>
 
           {/* <div
           className={` hidden sm:inline pl-[0.6rem] md:pl-[0.6rem] cursor-pointer`}
