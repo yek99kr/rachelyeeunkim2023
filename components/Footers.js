@@ -52,6 +52,7 @@ const Footers = () => {
               Instagram
             </div>
           </Link>
+
           <div
             className={`hover:font-['Bellota'] hover:text-[0.855rem] hidden sm:inline pl-[0.6rem] md:pl-[0.6rem] cursor-pointer`}
           >
