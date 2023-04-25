@@ -10,7 +10,7 @@ const Title = () => {
       <div
         className="select-none title"
         onClick={() => {
-          if (title < 22) {
+          if (title < 20) {
             updateTitle(title + 1);
           } else {
             updateTitle(1);
@@ -154,6 +154,9 @@ const Title = () => {
         ></img>
 
         <img
+          onClick={() => {
+            document.querySelector(".drawingRachel").play();
+          }}
           className={`title ${
             title === 19 ? "block" : "hidden"
           } absolute active:scale-90 transition-[0.2s] cursor-pointer w-[75vw] md:w-[500px] self-center left-1/2 top-1/2 -translate-x-1/2 translate-y-[-150%] md:translate-y-[-155%]`}
@@ -167,7 +170,7 @@ const Title = () => {
           src="/title/asciiRachel2.png"
         ></img> */}
 
-        <img
+        {/* <img
           className={`title ${
             title === 20 ? "block" : "hidden"
           } absolute active:scale-90 transition-[0.2s] cursor-pointer w-[30vw] md:w-[190px] self-center left-1/2 top-1/2 -translate-x-[50%] rotate-[-0deg] translate-y-[-125%] md:translate-y-[-120%]`}
@@ -182,7 +185,7 @@ const Title = () => {
             title === 21 ? "block" : "hidden"
           } absolute active:scale-90 transition-[0.2s] cursor-pointer w-[80vw] md:w-[550px] self-center left-1/2 top-1/2 -translate-x-1/2 translate-y-[-130%] md:translate-y-[-125%]`}
           src="/title/filledRachel.png"
-        ></img>
+        ></img> */}
 
         <div
           onClick={() => {
@@ -191,7 +194,7 @@ const Title = () => {
             video.currentTime = 0;
           }}
           className={`title ${
-            title === 22 ? "block" : "hidden"
+            title === 20 ? "block" : "hidden"
           } pointer-events-auto absolute active:scale-90 transition-[0.2s] cursor-pointer w-[70vw] md:w-[510px] self-center left-1/2 top-1/2 -translate-x-[50%] rotate-[-0deg] translate-y-[-102%] md:translate-y-[-100%] aspect-video`}
         >
           <video
