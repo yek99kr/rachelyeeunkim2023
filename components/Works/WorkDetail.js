@@ -27,7 +27,7 @@ const WorkDetail = ({ works, work }) => {
           <GrClose />
         </div>
       </Link>
-      <div className="w-[98vw] md:ml-[1vw] mt-[45px] md:mt-[80px] text-center">
+      <div className="w-[98vw] md:ml-[1vw] mt-[80px] md:mt-[80px] text-center">
         <div className="w-full pt-10 pb-3 md:pb-5 ">
           <p className="text-sm"> {work.data.year}</p>
           <p className="text-xl md:text-2xl font-[500]">{work.data.title}</p>
