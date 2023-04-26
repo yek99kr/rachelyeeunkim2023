@@ -42,7 +42,7 @@ const SearchBar = () => {
     <>
       <div className="z-[1000] fixed drop-shadow-[0_0px_4px_rgba(0,0,0,0.15)] left-[2vw] md:left-[1vw] top-[15px] w-[96vw] md:w-[98vw] lg:w-[32vw] h-[43px] md:h-[50px] text-lg ">
         <Link href="/" passHref scroll={false}>
-          <div className="absolute rounded-full z-10 m-[7.5px] ml-[13px] md:ml-[14px] md:m-[6px] w-[27px] md:w-[35px] aspect-square">
+          <div className="absolute rounded-full z-10 m-[7.5px] ml-[13px] md:ml-[14px] md:m-[8px] w-[27px] md:w-[33px] aspect-square">
             {/* <p className="text-[60%]">*icon</p> */}
             <img className="w-[100%]" src="/icon2.png"></img>
           </div>
@@ -54,7 +54,7 @@ const SearchBar = () => {
             type="text"
             name="search"
             defaultValue={searchWord}
-            className="searchBar absolute w-[100%] h-[100%] pl-[44.5px] md:pl-[53px] pr-[45px] rounded-full"
+            className="searchBar absolute w-[100%] h-[100%] pl-[44.5px] md:pl-[52px] pr-[45px] rounded-full"
             placeholder="Search"
             autoComplete="off"
           ></input>
