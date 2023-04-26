@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useState, useContext } from "react";
+import { useContext } from "react";
 import { AppContext } from "../context/AppContext";
 
 const Footers = () => {
@@ -7,7 +7,22 @@ const Footers = () => {
   return (
     <div className="footer flex w-[100vw] fixed z-[100] bottom-0 p-3 md:p-4 pl-[0.8rem] md:pl-[1rem] text-sm lg:text-sm">
       <div className="drop-shadow-[0_0px_2px_white] ">
-        <div className="inline-block w-[7.7rem] sm:w-[18.3rem] h-[1rem]">
+        <div className="inline-block w-[6.3rem] sm:w-[21.6rem] h-[1rem]">
+          <Link
+            onClick={() => {
+              // updateSearchWord("works");
+              // document.querySelector(".searchBar").value = "works";
+            }}
+            href="/"
+            passHref
+            scroll={false}
+          >
+            <div
+              className={`sm:hover:font-['Bellota'] sm:hover:text-[0.925rem] inline cursor-pointer`}
+            >
+              Home
+            </div>
+          </Link>
           <Link
             onClick={() => {
               updateSearchWord("works");
@@ -18,7 +33,7 @@ const Footers = () => {
             scroll={false}
           >
             <div
-              className={`sm:hover:font-['Bellota'] sm:hover:text-[0.86rem] inline cursor-pointer`}
+              className={`sm:hover:font-['Bellota'] sm: hover:text-[0.88rem]  inline pl-[0.6rem] md:pl-[0.6rem] cursor-pointer`}
             >
               Works
             </div>
@@ -46,7 +61,7 @@ const Footers = () => {
             rel="noreferrer"
           >
             <div
-              className={`sm:hover:font-['Bellota'] sm:hover:text-[0.89rem] inline  pl-[0.6rem] md:pl-[0.6rem]  cursor-pointer`}
+              className={`sm:hover:font-['Bellota'] sm:hover:text-[0.89rem]  hidden sm:inline  pl-[0.6rem] md:pl-[0.6rem]  cursor-pointer`}
             >
               Instagram
             </div>

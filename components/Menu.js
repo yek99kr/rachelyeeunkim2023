@@ -5,7 +5,7 @@ import { AppContext } from "../context/AppContext";
 const Menu = () => {
   const { searchWord, updateSearchWord } = useContext(AppContext);
   return (
-    <div className="flex justify-between  flex-row flex-nowrap sm:hidden font-[500] mt-[4px] w-[100vw] fixed z-[100] top-[60px] p-3 pl-[2vw] pr-[2vw] text-[2.9vw]">
+    <div className="flex justify-between  flex-row flex-nowrap sm:hidden font-[500] mt-[4px] w-[100vw] fixed z-[100] top-[60px] p-3 pl-[2vw] pr-[2vw] text-[3vw]">
       <Link
         onClick={() => {
           updateSearchWord("works");

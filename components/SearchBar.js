@@ -42,9 +42,9 @@ const SearchBar = () => {
     <>
       <div className="z-[1000] fixed drop-shadow-[0_0px_4px_rgba(0,0,0,0.15)] left-[2vw] md:left-[1vw] top-[15px] w-[96vw] md:w-[98vw] lg:w-[32vw] h-[43px] md:h-[50px] text-lg ">
         <Link href="/" passHref scroll={false}>
-          <div className="absolute rounded-full z-10 m-[9px] md:ml-[12px] md:m-[10px] w-[26px] md:w-[30px] aspect-square bg-gray-200">
-            <p className="text-[60%]">*icon</p>
-            {/* <img className="w-[96%]" src="/R.png"></img> */}
+          <div className="absolute rounded-full z-10 m-[7.5px] ml-[13px] md:ml-[14px] md:m-[6px] w-[27px] md:w-[35px] aspect-square">
+            {/* <p className="text-[60%]">*icon</p> */}
+            <img className="w-[100%]" src="/icon2.png"></img>
           </div>
         </Link>
 
@@ -54,7 +54,7 @@ const SearchBar = () => {
             type="text"
             name="search"
             defaultValue={searchWord}
-            className="searchBar absolute w-[100%] h-[100%] pl-[47px] md:pl-[49px] pr-[45px] rounded-full"
+            className="searchBar absolute w-[100%] h-[100%] pl-[44.5px] md:pl-[53px] pr-[45px] rounded-full"
             placeholder="Search"
             autoComplete="off"
           ></input>
@@ -62,7 +62,7 @@ const SearchBar = () => {
             type="submit"
             className="absolute right-0 z-10  m-[11px] md:m-[12px] cursor-pointer text-gray-400 hover:text-gray-900 transition-[0.5s]"
           >
-            <HiSearch className="w-[21px] h-[21px] md:w-[25px] md:h-[25px]" />
+            <HiSearch className="w-[21px] h-[21px] md:w-[25px] md:h-[25px]  md:mr-[3px]" />
           </button>
         </form>
       </div>
