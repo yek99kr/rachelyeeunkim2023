@@ -11,6 +11,7 @@ import { AppContextProvider } from "../context/AppContext";
 import SearchBar from "../components/SearchBar";
 import Router from "next/router";
 import Menu from "../components/Menu";
+import { GoogleAnalytics } from "nextjs-google-analytics";
 
 import Head from "next/head";
 
@@ -81,6 +82,7 @@ export default function App({ router, Component, pageProps }) {
         />
         {/* <link rel="preload" href="https://example.com/widget.html" as="document"></link> */}
       </Head>
+      <GoogleAnalytics strategy="lazyOnload" />
 
       <PrismicProvider
         linkResolver={linkResolver}
