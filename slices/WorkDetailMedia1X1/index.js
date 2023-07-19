@@ -56,10 +56,10 @@ const WorkDetailMedia1X1 = ({ slice }) => {
       {slice.variation === "2Row" ? (
         <>
           {slice.primary.media1slider ? (
-            <div className="relative  col-start-3 lg:col-start-2 w-[94vw] lg:w-[35vw]   aspect-square">
+            <div className="relative  col-start-3 md:col-start-2 w-[94vw] md:w-[35vw] aspect-square">
               <div
                 ref={sliderRef}
-                className="keen-slider aspect-square min-w-[94vw] lg:min-w-[35vw]"
+                className="keen-slider aspect-square min-w-[94vw] md:min-w-[35vw]"
               >
                 {slice.items
                   .map((i) => {
@@ -118,7 +118,7 @@ const WorkDetailMedia1X1 = ({ slice }) => {
             </div>
           ) : slice.primary.media1.link_type === "Web" ? (
             <>
-              <div className="col-start-3 lg:col-start-2 w-[94vw] lg:w-[35vw] relative  aspect-square">
+              <div className="col-start-3 md:col-start-2 w-[94vw] md:w-[35vw] relative  aspect-square">
                 <iframe
                   className="w-[100%] h-[100%]"
                   src={`${slice.primary.media1.url.slice(6)}?quality=1080p${
@@ -133,7 +133,7 @@ const WorkDetailMedia1X1 = ({ slice }) => {
             </>
           ) : (
             <>
-              <div className="col-start-3 lg:col-start-2 w-[94vw] lg:w-[35vw] relative  aspect-square">
+              <div className="col-start-3 md:col-start-2 w-[94vw] md:w-[35vw] relative  aspect-square">
                 <Image
                   src={slice.primary.media1.url}
                   alt={slice.primary.media1.alt}
@@ -147,10 +147,10 @@ const WorkDetailMedia1X1 = ({ slice }) => {
           )}
 
           {slice.primary.media2slider ? (
-            <div className="col-start-3 lg:col-start-4 w-[94vw] lg:w-[35vw] relative  aspect-square">
+            <div className="col-start-3 md:col-start-4 w-[94vw] md:w-[35vw] relative  aspect-square">
               <div
                 ref={sliderRef2}
-                className="keen-slider aspect-square min-w-[94vw] lg:min-w-[35vw]"
+                className="keen-slider aspect-square min-w-[94vw] md:min-w-[35vw]"
               >
                 {slice.items
                   .map((i) => {
@@ -209,7 +209,7 @@ const WorkDetailMedia1X1 = ({ slice }) => {
             </div>
           ) : slice.primary.media2.link_type === "Web" ? (
             <>
-              <div className="col-start-3 lg:col-start-4 w-[94vw] md:w-[35vw] relative rounded  aspect-square">
+              <div className="col-start-3 md:col-start-4 w-[94vw] md:w-[35vw] relative rounded  aspect-square">
                 <iframe
                   className="w-[100%] h-[100%]"
                   src={`${slice.primary.media2.url.slice(6)}?quality=1080p${
@@ -224,7 +224,7 @@ const WorkDetailMedia1X1 = ({ slice }) => {
             </>
           ) : (
             <>
-              <div className="col-start-3 lg:col-start-4 w-[94vw] md:w-[35vw] relative rounded  aspect-square">
+              <div className="col-start-3 md:col-start-4 w-[94vw] md:w-[35vw] relative rounded  aspect-square">
                 <Image
                   src={slice.primary.media2.url}
                   alt={slice.primary.media2.alt}

@@ -55,6 +55,11 @@
       "default": {
         "primary": {}
       }
+    },
+    "WorkDetailMedia4X5": {
+      "default": {
+        "primary": {}
+      }
     }
   }
 }

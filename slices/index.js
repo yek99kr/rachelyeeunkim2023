@@ -5,6 +5,7 @@ import DetailText from './DetailText';
 import LinkButton from './LinkButton';
 import WorkDetailMedia16X9 from './WorkDetailMedia16X9';
 import WorkDetailMedia1X1 from './WorkDetailMedia1X1';
+import WorkDetailMedia4X5 from './WorkDetailMedia4X5';
 import WorkDetailMedia9X16 from './WorkDetailMedia9X16';
 
 export {
@@ -13,6 +14,7 @@ export {
 	LinkButton,
 	WorkDetailMedia16X9,
 	WorkDetailMedia1X1,
+	WorkDetailMedia4X5,
 	WorkDetailMedia9X16,
 };
 
@@ -22,5 +24,6 @@ export const components = {
 	link_button: LinkButton,
 	work_detail_media16_x9: WorkDetailMedia16X9,
 	work_detail_media1_x1: WorkDetailMedia1X1,
+	work_detail_media4_x5: WorkDetailMedia4X5,
 	work_detail_media9_x16: WorkDetailMedia9X16,
 };

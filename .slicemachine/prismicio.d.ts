@@ -220,7 +220,7 @@ interface WorksDocumentData {
  * Slice for *works → Slice Zone*
  *
  */
-type WorksDocumentDataSlicesSlice = CreditsSlice | DetailTextSlice | WorkDetailMedia16X9Slice | WorkDetailMedia1X1Slice | WorkDetailMedia9X16Slice | LinkButtonSlice;
+type WorksDocumentDataSlicesSlice = CreditsSlice | DetailTextSlice | WorkDetailMedia16X9Slice | WorkDetailMedia1X1Slice | WorkDetailMedia9X16Slice | LinkButtonSlice | WorkDetailMedia4X5Slice;
 /**
  * works document from Prismic
  *
@@ -775,6 +775,77 @@ type WorkDetailMedia1X1SliceVariation = WorkDetailMedia1X1SliceDefault | WorkDet
  */
 export type WorkDetailMedia1X1Slice = prismicT.SharedSlice<"work_detail_media1_x1", WorkDetailMedia1X1SliceVariation>;
 /**
+ * Primary content in WorkDetailMedia4X5 → Primary
+ *
+ */
+interface WorkDetailMedia4X5SliceDefaultPrimary {
+    /**
+     * Media1 field in *WorkDetailMedia4X5 → Primary*
+     *
+     * - **Field Type**: Link
+     * - **Placeholder**: *None*
+     * - **API ID Path**: work_detail_media4_x5.primary.media1
+     * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+     *
+     */
+    media1: prismicT.LinkField;
+    /**
+     * Autoplay1 field in *WorkDetailMedia4X5 → Primary*
+     *
+     * - **Field Type**: Boolean
+     * - **Placeholder**: *None*
+     * - **Default Value**: false
+     * - **API ID Path**: work_detail_media4_x5.primary.autoplay1
+     * - **Documentation**: https://prismic.io/docs/core-concepts/boolean
+     *
+     */
+    autoplay1: prismicT.BooleanField;
+    /**
+     * Media2 field in *WorkDetailMedia4X5 → Primary*
+     *
+     * - **Field Type**: Link
+     * - **Placeholder**: *None*
+     * - **API ID Path**: work_detail_media4_x5.primary.media2
+     * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+     *
+     */
+    media2: prismicT.LinkField;
+    /**
+     * Autoplay2 field in *WorkDetailMedia4X5 → Primary*
+     *
+     * - **Field Type**: Boolean
+     * - **Placeholder**: *None*
+     * - **Default Value**: false
+     * - **API ID Path**: work_detail_media4_x5.primary.autoplay2
+     * - **Documentation**: https://prismic.io/docs/core-concepts/boolean
+     *
+     */
+    autoplay2: prismicT.BooleanField;
+}
+/**
+ * Default variation for WorkDetailMedia4X5 Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `WorkDetailMedia4X5`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type WorkDetailMedia4X5SliceDefault = prismicT.SharedSliceVariation<"default", Simplify<WorkDetailMedia4X5SliceDefaultPrimary>, never>;
+/**
+ * Slice variation for *WorkDetailMedia4X5*
+ *
+ */
+type WorkDetailMedia4X5SliceVariation = WorkDetailMedia4X5SliceDefault;
+/**
+ * WorkDetailMedia4X5 Shared Slice
+ *
+ * - **API ID**: `work_detail_media4_x5`
+ * - **Description**: `WorkDetailMedia4X5`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type WorkDetailMedia4X5Slice = prismicT.SharedSlice<"work_detail_media4_x5", WorkDetailMedia4X5SliceVariation>;
+/**
  * Primary content in WorkDetailMedia9X16 → Primary
  *
  */
@@ -829,6 +900,6 @@ declare module "@prismicio/client" {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { CuteDogsDocumentData, CuteDogsDocumentDataDogsItem, CuteDogsDocument, HowToDocumentData, HowToDocumentDataHowToItem, HowToDocument, WorksDocumentData, WorksDocumentDataSlicesSlice, WorksDocument, AllDocumentTypes, CreditsSliceDefaultItem, CreditsSliceDefault, CreditsSliceVariation, CreditsSlice, DetailTextSliceDefaultPrimary, DetailTextSliceDefault, DetailTextSliceVariation, DetailTextSlice, LinkButtonSliceDefaultPrimary, LinkButtonSliceDefault, LinkButtonSliceVariation, LinkButtonSlice, WorkDetailMedia16X9SliceDefaultPrimary, WorkDetailMedia16X9SliceDefault, WorkDetailMedia16X9SliceFullPrimary, WorkDetailMedia16X9SliceFull, WorkDetailMedia16X9SliceSliderItem, WorkDetailMedia16X9SliceSlider, WorkDetailMedia16X9SliceVariation, WorkDetailMedia16X9Slice, WorkDetailMedia1X1SliceDefaultPrimary, WorkDetailMedia1X1SliceDefault, WorkDetailMedia1X1Slice2RowPrimary, WorkDetailMedia1X1Slice2RowItem, WorkDetailMedia1X1Slice2Row, WorkDetailMedia1X1SliceSliderItem, WorkDetailMedia1X1SliceSlider, WorkDetailMedia1X1SliceFullPrimary, WorkDetailMedia1X1SliceFull, WorkDetailMedia1X1Slice3RowsPrimary, WorkDetailMedia1X1Slice3Rows, WorkDetailMedia1X1SliceVariation, WorkDetailMedia1X1Slice, WorkDetailMedia9X16SliceDefaultPrimary, WorkDetailMedia9X16SliceDefault, WorkDetailMedia9X16SliceVariation, WorkDetailMedia9X16Slice };
+        export type { CuteDogsDocumentData, CuteDogsDocumentDataDogsItem, CuteDogsDocument, HowToDocumentData, HowToDocumentDataHowToItem, HowToDocument, WorksDocumentData, WorksDocumentDataSlicesSlice, WorksDocument, AllDocumentTypes, CreditsSliceDefaultItem, CreditsSliceDefault, CreditsSliceVariation, CreditsSlice, DetailTextSliceDefaultPrimary, DetailTextSliceDefault, DetailTextSliceVariation, DetailTextSlice, LinkButtonSliceDefaultPrimary, LinkButtonSliceDefault, LinkButtonSliceVariation, LinkButtonSlice, WorkDetailMedia16X9SliceDefaultPrimary, WorkDetailMedia16X9SliceDefault, WorkDetailMedia16X9SliceFullPrimary, WorkDetailMedia16X9SliceFull, WorkDetailMedia16X9SliceSliderItem, WorkDetailMedia16X9SliceSlider, WorkDetailMedia16X9SliceVariation, WorkDetailMedia16X9Slice, WorkDetailMedia1X1SliceDefaultPrimary, WorkDetailMedia1X1SliceDefault, WorkDetailMedia1X1Slice2RowPrimary, WorkDetailMedia1X1Slice2RowItem, WorkDetailMedia1X1Slice2Row, WorkDetailMedia1X1SliceSliderItem, WorkDetailMedia1X1SliceSlider, WorkDetailMedia1X1SliceFullPrimary, WorkDetailMedia1X1SliceFull, WorkDetailMedia1X1Slice3RowsPrimary, WorkDetailMedia1X1Slice3Rows, WorkDetailMedia1X1SliceVariation, WorkDetailMedia1X1Slice, WorkDetailMedia4X5SliceDefaultPrimary, WorkDetailMedia4X5SliceDefault, WorkDetailMedia4X5SliceVariation, WorkDetailMedia4X5Slice, WorkDetailMedia9X16SliceDefaultPrimary, WorkDetailMedia9X16SliceDefault, WorkDetailMedia9X16SliceVariation, WorkDetailMedia9X16Slice };
     }
 }

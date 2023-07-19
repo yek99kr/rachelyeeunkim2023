@@ -1,29 +1,29 @@
 {
   "uid": {
     "__TYPE__": "UIDContent",
-    "value": "short"
+    "value": "stomach"
   },
   "title": {
     "__TYPE__": "FieldContent",
-    "value": "began",
+    "value": "stone",
     "type": "Text"
   },
   "year": {
     "__TYPE__": "FieldContent",
-    "value": "child",
+    "value": "floating",
     "type": "Text"
   },
   "mini_thumbnail": {
     "__TYPE__": "ImageContent",
     "origin": {
       "id": "main",
-      "url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea",
-      "width": 3500,
-      "height": 2338
+      "url": "https://images.unsplash.com/photo-1579931794097-0ad001e51edb",
+      "width": 3958,
+      "height": 3958
     },
-    "url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea",
-    "width": 3500,
-    "height": 2338,
+    "url": "https://images.unsplash.com/photo-1579931794097-0ad001e51edb",
+    "width": 3958,
+    "height": 3958,
     "edit": {
       "zoom": 1,
       "crop": {
@@ -45,7 +45,7 @@
     "__TYPE__": "LinkContent",
     "value": {
       "__TYPE__": "ExternalLink",
-      "url": "https://prismic.io"
+      "url": "http://twitter.com"
     }
   },
   "summary": {
@@ -54,7 +54,7 @@
       {
         "type": "paragraph",
         "content": {
-          "text": "Aute eu et ullamco aliquip aliquip nostrud excepteur. Aute voluptate incididunt nulla consectetur duis nulla enim aute aute aliqua eu."
+          "text": "Enim velit pariatur excepteur incididunt Lorem labore elit. Occaecat culpa anim qui reprehenderit consequat esse labore non eiusmod ullamco ad sunt cillum aute."
         }
       }
     ]
@@ -63,7 +63,7 @@
     "__TYPE__": "SliceContentType",
     "value": [
       {
-        "key": "credits$79b2fd46-37a0-4677-9e51-1b1a5905a6cf",
+        "key": "credits$5022f6bf-92bd-40fb-b0be-8a91446275ea",
         "name": "credits",
         "widget": {
           "__TYPE__": "SharedSliceContent",
@@ -77,7 +77,7 @@
                   "title",
                   {
                     "__TYPE__": "FieldContent",
-                    "value": "horn",
+                    "value": "dinner",
                     "type": "Text"
                   }
                 ],
@@ -85,7 +85,7 @@
                   "name",
                   {
                     "__TYPE__": "FieldContent",
-                    "value": "neighbor",
+                    "value": "nine",
                     "type": "Text"
                   }
                 ]
@@ -95,7 +95,7 @@
         }
       },
       {
-        "key": "detail_text$8e375341-55fd-445e-b28d-83e55016e53f",
+        "key": "detail_text$cc3232d7-a9f7-432d-81e0-026fb1145764",
         "name": "detail_text",
         "widget": {
           "__TYPE__": "SharedSliceContent",
@@ -107,7 +107,7 @@
                 {
                   "type": "paragraph",
                   "content": {
-                    "text": "Duis ipsum mollit aliqua culpa. Culpa elit sit fugiat reprehenderit ea quis culpa in et. In consectetur laboris aliquip pariatur esse veniam consequat irure aute officia dolore."
+                    "text": "Fugiat pariatur exercitation enim aute veniam ea tempor consequat cillum. Velit in anim quis consequat eu Lorem culpa cupidatat tempor quis non incididunt dolore. Cupidatat nisi ex pariatur labore irure exercitation excepteur labore."
                   }
                 }
               ]
@@ -122,7 +122,7 @@
         }
       },
       {
-        "key": "work_detail_media16_x9$1feb4cd6-859c-49d1-b402-a942329e4687",
+        "key": "work_detail_media16_x9$c0b97cf4-9f10-44fc-854a-d7deac932362",
         "name": "work_detail_media16_x9",
         "widget": {
           "__TYPE__": "SharedSliceContent",
@@ -133,6 +133,33 @@
               "value": {
                 "__TYPE__": "ExternalLink",
                 "url": "https://slicemachine.dev"
+              }
+            },
+            "autoplay": {
+              "__TYPE__": "BooleanContent",
+              "value": true
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
+      },
+      {
+        "key": "work_detail_media1_x1$8aeff01f-862e-4536-8539-1d169be74fb6",
+        "name": "work_detail_media1_x1",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "media": {
+              "__TYPE__": "LinkContent",
+              "value": {
+                "__TYPE__": "ExternalLink",
+                "url": "http://google.com"
               }
             },
             "autoplay": {
@@ -149,8 +176,8 @@
         }
       },
       {
-        "key": "work_detail_media1_x1$de4c6bbe-9c99-4eb3-b1c9-4ae4c93f62a0",
-        "name": "work_detail_media1_x1",
+        "key": "work_detail_media9_x16$982fd15f-f1c0-4840-b061-239930df611d",
+        "name": "work_detail_media9_x16",
         "widget": {
           "__TYPE__": "SharedSliceContent",
           "variation": "default",
@@ -176,22 +203,23 @@
         }
       },
       {
-        "key": "work_detail_media9_x16$bdd9a7f0-17fd-4880-a1e3-ee23c92d953e",
-        "name": "work_detail_media9_x16",
+        "key": "link_button$e01bee28-8feb-4927-97d8-6f6810be0bf0",
+        "name": "link_button",
         "widget": {
           "__TYPE__": "SharedSliceContent",
           "variation": "default",
           "primary": {
-            "media": {
+            "name": {
+              "__TYPE__": "FieldContent",
+              "value": "swing",
+              "type": "Text"
+            },
+            "link": {
               "__TYPE__": "LinkContent",
               "value": {
                 "__TYPE__": "ExternalLink",
-                "url": "http://twitter.com"
+                "url": "https://prismic.io"
               }
-            },
-            "autoplay": {
-              "__TYPE__": "BooleanContent",
-              "value": false
             }
           },
           "items": [
@@ -203,23 +231,33 @@
         }
       },
       {
-        "key": "link_button$373bb981-e491-4fc8-802b-b88675806619",
-        "name": "link_button",
+        "key": "work_detail_media4_x5$ec1f14ba-28ed-4c0a-8332-5da8421df9d8",
+        "name": "work_detail_media4_x5",
         "widget": {
           "__TYPE__": "SharedSliceContent",
           "variation": "default",
           "primary": {
-            "name": {
-              "__TYPE__": "FieldContent",
-              "value": "largest",
-              "type": "Text"
-            },
-            "link": {
+            "media1": {
               "__TYPE__": "LinkContent",
               "value": {
                 "__TYPE__": "ExternalLink",
                 "url": "https://slicemachine.dev"
               }
+            },
+            "autoplay1": {
+              "__TYPE__": "BooleanContent",
+              "value": true
+            },
+            "media2": {
+              "__TYPE__": "LinkContent",
+              "value": {
+                "__TYPE__": "ExternalLink",
+                "url": "http://twitter.com"
+              }
+            },
+            "autoplay2": {
+              "__TYPE__": "BooleanContent",
+              "value": true
             }
           },
           "items": [
