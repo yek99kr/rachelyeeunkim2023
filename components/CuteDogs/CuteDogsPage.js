@@ -1,5 +1,3 @@
-import Image from "next/image";
-import { useState } from "react";
 import CuteDogsThumbnail from "./CuteDogsThumbnail";
 
 const CuteDogsPage = ({ cuteDogs }) => {
