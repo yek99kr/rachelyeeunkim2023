@@ -49,6 +49,9 @@
     "WorkDetailMedia9X16": {
       "default": {
         "primary": {}
+      },
+      "2Row": {
+        "primary": {}
       }
     },
     "LinkButton": {

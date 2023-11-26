@@ -882,10 +882,115 @@ interface WorkDetailMedia9X16SliceDefaultPrimary {
  */
 export type WorkDetailMedia9X16SliceDefault = prismicT.SharedSliceVariation<"default", Simplify<WorkDetailMedia9X16SliceDefaultPrimary>, never>;
 /**
+ * Primary content in WorkDetailMedia9X16 → Primary
+ *
+ */
+interface WorkDetailMedia9X16Slice2RowPrimary {
+    /**
+     * Media1 field in *WorkDetailMedia9X16 → Primary*
+     *
+     * - **Field Type**: Link
+     * - **Placeholder**: *None*
+     * - **API ID Path**: work_detail_media9_x16.primary.media1
+     * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+     *
+     */
+    media1: prismicT.LinkField;
+    /**
+     * Media1Slider field in *WorkDetailMedia9X16 → Primary*
+     *
+     * - **Field Type**: Boolean
+     * - **Placeholder**: *None*
+     * - **Default Value**: false
+     * - **API ID Path**: work_detail_media9_x16.primary.media1slider
+     * - **Documentation**: https://prismic.io/docs/core-concepts/boolean
+     *
+     */
+    media1slider: prismicT.BooleanField;
+    /**
+     * Media1Autoplay field in *WorkDetailMedia9X16 → Primary*
+     *
+     * - **Field Type**: Boolean
+     * - **Placeholder**: *None*
+     * - **Default Value**: false
+     * - **API ID Path**: work_detail_media9_x16.primary.media1autoplay
+     * - **Documentation**: https://prismic.io/docs/core-concepts/boolean
+     *
+     */
+    media1autoplay: prismicT.BooleanField;
+    /**
+     * Media2 field in *WorkDetailMedia9X16 → Primary*
+     *
+     * - **Field Type**: Link
+     * - **Placeholder**: *None*
+     * - **API ID Path**: work_detail_media9_x16.primary.media2
+     * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+     *
+     */
+    media2: prismicT.LinkField;
+    /**
+     * Media2Slider field in *WorkDetailMedia9X16 → Primary*
+     *
+     * - **Field Type**: Boolean
+     * - **Placeholder**: *None*
+     * - **Default Value**: false
+     * - **API ID Path**: work_detail_media9_x16.primary.media2slider
+     * - **Documentation**: https://prismic.io/docs/core-concepts/boolean
+     *
+     */
+    media2slider: prismicT.BooleanField;
+    /**
+     * Media2Autoplay field in *WorkDetailMedia9X16 → Primary*
+     *
+     * - **Field Type**: Boolean
+     * - **Placeholder**: *None*
+     * - **Default Value**: false
+     * - **API ID Path**: work_detail_media9_x16.primary.media2autoplay
+     * - **Documentation**: https://prismic.io/docs/core-concepts/boolean
+     *
+     */
+    media2autoplay: prismicT.BooleanField;
+}
+/**
+ * Item in WorkDetailMedia9X16 → Items
+ *
+ */
+export interface WorkDetailMedia9X16Slice2RowItem {
+    /**
+     * Media1 field in *WorkDetailMedia9X16 → Items*
+     *
+     * - **Field Type**: Link
+     * - **Placeholder**: *None*
+     * - **API ID Path**: work_detail_media9_x16.items[].media1
+     * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+     *
+     */
+    media1: prismicT.LinkField;
+    /**
+     * Media2 field in *WorkDetailMedia9X16 → Items*
+     *
+     * - **Field Type**: Link
+     * - **Placeholder**: *None*
+     * - **API ID Path**: work_detail_media9_x16.items[].media2
+     * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+     *
+     */
+    media2: prismicT.LinkField;
+}
+/**
+ * 2 row variation for WorkDetailMedia9X16 Slice
+ *
+ * - **API ID**: `2Row`
+ * - **Description**: `WorkDetailMedia9X16`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type WorkDetailMedia9X16Slice2Row = prismicT.SharedSliceVariation<"2Row", Simplify<WorkDetailMedia9X16Slice2RowPrimary>, Simplify<WorkDetailMedia9X16Slice2RowItem>>;
+/**
  * Slice variation for *WorkDetailMedia9X16*
  *
  */
-type WorkDetailMedia9X16SliceVariation = WorkDetailMedia9X16SliceDefault;
+type WorkDetailMedia9X16SliceVariation = WorkDetailMedia9X16SliceDefault | WorkDetailMedia9X16Slice2Row;
 /**
  * WorkDetailMedia9X16 Shared Slice
  *
@@ -900,6 +1005,6 @@ declare module "@prismicio/client" {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { CuteDogsDocumentData, CuteDogsDocumentDataDogsItem, CuteDogsDocument, HowToDocumentData, HowToDocumentDataHowToItem, HowToDocument, WorksDocumentData, WorksDocumentDataSlicesSlice, WorksDocument, AllDocumentTypes, CreditsSliceDefaultItem, CreditsSliceDefault, CreditsSliceVariation, CreditsSlice, DetailTextSliceDefaultPrimary, DetailTextSliceDefault, DetailTextSliceVariation, DetailTextSlice, LinkButtonSliceDefaultPrimary, LinkButtonSliceDefault, LinkButtonSliceVariation, LinkButtonSlice, WorkDetailMedia16X9SliceDefaultPrimary, WorkDetailMedia16X9SliceDefault, WorkDetailMedia16X9SliceFullPrimary, WorkDetailMedia16X9SliceFull, WorkDetailMedia16X9SliceSliderItem, WorkDetailMedia16X9SliceSlider, WorkDetailMedia16X9SliceVariation, WorkDetailMedia16X9Slice, WorkDetailMedia1X1SliceDefaultPrimary, WorkDetailMedia1X1SliceDefault, WorkDetailMedia1X1Slice2RowPrimary, WorkDetailMedia1X1Slice2RowItem, WorkDetailMedia1X1Slice2Row, WorkDetailMedia1X1SliceSliderItem, WorkDetailMedia1X1SliceSlider, WorkDetailMedia1X1SliceFullPrimary, WorkDetailMedia1X1SliceFull, WorkDetailMedia1X1Slice3RowsPrimary, WorkDetailMedia1X1Slice3Rows, WorkDetailMedia1X1SliceVariation, WorkDetailMedia1X1Slice, WorkDetailMedia4X5SliceDefaultPrimary, WorkDetailMedia4X5SliceDefault, WorkDetailMedia4X5SliceVariation, WorkDetailMedia4X5Slice, WorkDetailMedia9X16SliceDefaultPrimary, WorkDetailMedia9X16SliceDefault, WorkDetailMedia9X16SliceVariation, WorkDetailMedia9X16Slice };
+        export type { CuteDogsDocumentData, CuteDogsDocumentDataDogsItem, CuteDogsDocument, HowToDocumentData, HowToDocumentDataHowToItem, HowToDocument, WorksDocumentData, WorksDocumentDataSlicesSlice, WorksDocument, AllDocumentTypes, CreditsSliceDefaultItem, CreditsSliceDefault, CreditsSliceVariation, CreditsSlice, DetailTextSliceDefaultPrimary, DetailTextSliceDefault, DetailTextSliceVariation, DetailTextSlice, LinkButtonSliceDefaultPrimary, LinkButtonSliceDefault, LinkButtonSliceVariation, LinkButtonSlice, WorkDetailMedia16X9SliceDefaultPrimary, WorkDetailMedia16X9SliceDefault, WorkDetailMedia16X9SliceFullPrimary, WorkDetailMedia16X9SliceFull, WorkDetailMedia16X9SliceSliderItem, WorkDetailMedia16X9SliceSlider, WorkDetailMedia16X9SliceVariation, WorkDetailMedia16X9Slice, WorkDetailMedia1X1SliceDefaultPrimary, WorkDetailMedia1X1SliceDefault, WorkDetailMedia1X1Slice2RowPrimary, WorkDetailMedia1X1Slice2RowItem, WorkDetailMedia1X1Slice2Row, WorkDetailMedia1X1SliceSliderItem, WorkDetailMedia1X1SliceSlider, WorkDetailMedia1X1SliceFullPrimary, WorkDetailMedia1X1SliceFull, WorkDetailMedia1X1Slice3RowsPrimary, WorkDetailMedia1X1Slice3Rows, WorkDetailMedia1X1SliceVariation, WorkDetailMedia1X1Slice, WorkDetailMedia4X5SliceDefaultPrimary, WorkDetailMedia4X5SliceDefault, WorkDetailMedia4X5SliceVariation, WorkDetailMedia4X5Slice, WorkDetailMedia9X16SliceDefaultPrimary, WorkDetailMedia9X16SliceDefault, WorkDetailMedia9X16Slice2RowPrimary, WorkDetailMedia9X16Slice2RowItem, WorkDetailMedia9X16Slice2Row, WorkDetailMedia9X16SliceVariation, WorkDetailMedia9X16Slice };
     }
 }
